@@ -22,6 +22,18 @@ MonoBehaviour:
     m_Localized: Manjigyu
     m_Metadata:
       m_Items: []
+  - m_Id: 7859984846848
+    m_Localized: dwdq
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7863017328640
+    m_Localized: wdqwd
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7950569230336
+    m_Localized: dwdqw
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
