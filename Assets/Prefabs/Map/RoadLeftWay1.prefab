@@ -203,10 +203,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4050118735957365509, guid: a2deb738456a4184081aad9e2c628653, type: 3}
-      propertyPath: tiles
-      value: 
-      objectReference: {fileID: 5053910623334512895}
     - target: {fileID: 4392002336861150956, guid: a2deb738456a4184081aad9e2c628653, type: 3}
       propertyPath: m_Name
       value: RoadSegment
@@ -230,17 +226,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fac765e1e36d64458d553aa550a138f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &5053910623334512895 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4909752155881028628, guid: a2deb738456a4184081aad9e2c628653, type: 3}
-  m_PrefabInstance: {fileID: 144653389422265579}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b1832625a0be7242935793bac148d7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1240558555436458563
@@ -364,10 +349,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4050118735957365509, guid: a2deb738456a4184081aad9e2c628653, type: 3}
-      propertyPath: tiles
-      value: 
-      objectReference: {fileID: 4195392046347169060}
     - target: {fileID: 4392002336861150956, guid: a2deb738456a4184081aad9e2c628653, type: 3}
       propertyPath: m_Name
       value: RoadSegment (1)
@@ -377,17 +358,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2deb738456a4184081aad9e2c628653, type: 3}
---- !u!114 &4195392046347169060 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4909752155881028628, guid: a2deb738456a4184081aad9e2c628653, type: 3}
-  m_PrefabInstance: {fileID: 9087128545292620080}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b1832625a0be7242935793bac148d7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5057294768092873269 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4050118735957365509, guid: a2deb738456a4184081aad9e2c628653, type: 3}

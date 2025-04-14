@@ -33,6 +33,12 @@ public class StageManager : InGameManager
         currentStageDataIndex%= stageDatas.Count;  
 
         var currStageData = stageDatas[currentStageDataIndex];
+
+        if(currStageData.isBossStage)
+        {
+            OnBossStageStart();
+        }
+
         GameManager.RoadMaker.SetRoadMakeMode(currStageData.roadMode, currStageData.roadWayCount);
         GameManager.RoadMaker.SetMapObjectMakeMode(currStageData.itemSetMode);
     }
@@ -41,5 +47,10 @@ public class StageManager : InGameManager
     private void OnCurrentStageClear()
     {
         OnSetRoadMode();
+    }
+
+    private void OnBossStageStart()
+    {
+
     }
 }

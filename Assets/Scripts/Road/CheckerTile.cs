@@ -20,7 +20,7 @@ public class CheckerTile : MonoBehaviour
     {
         for (int i = 0; i < tileMeshFilters.Length; i++)
         {
-            tileMeshFilters[i].transform.position = new Vector3(-(i % 3) * tileSize.x + tileSize.x, 0, (i / 3) * tileSize.z);
+            tileMeshFilters[i].transform.position = new Vector3((i % 3) * tileSize.x - tileSize.x, 0, (i / 3) * tileSize.z);
         }
     }
 

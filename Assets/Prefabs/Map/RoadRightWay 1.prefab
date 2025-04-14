@@ -181,10 +181,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4050118735957365509, guid: a2deb738456a4184081aad9e2c628653, type: 3}
-      propertyPath: tiles
-      value: 
-      objectReference: {fileID: 7981029597315820198}
     - target: {fileID: 4392002336861150956, guid: a2deb738456a4184081aad9e2c628653, type: 3}
       propertyPath: m_Name
       value: RoadSegment (1)
@@ -208,17 +204,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fac765e1e36d64458d553aa550a138f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7981029597315820198 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4909752155881028628, guid: a2deb738456a4184081aad9e2c628653, type: 3}
-  m_PrefabInstance: {fileID: 3089647124004755122}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b1832625a0be7242935793bac148d7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &5577946819308206049
@@ -269,10 +254,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4050118735957365509, guid: a2deb738456a4184081aad9e2c628653, type: 3}
-      propertyPath: tiles
-      value: 
-      objectReference: {fileID: 669392053135576053}
     - target: {fileID: 4392002336861150956, guid: a2deb738456a4184081aad9e2c628653, type: 3}
       propertyPath: m_Name
       value: RoadSegment
@@ -282,17 +263,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2deb738456a4184081aad9e2c628653, type: 3}
---- !u!114 &669392053135576053 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4909752155881028628, guid: a2deb738456a4184081aad9e2c628653, type: 3}
-  m_PrefabInstance: {fileID: 5577946819308206049}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b1832625a0be7242935793bac148d7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &7073642357721354425 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3405417494184322904, guid: a2deb738456a4184081aad9e2c628653, type: 3}

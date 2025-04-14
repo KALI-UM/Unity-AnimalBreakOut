@@ -163,10 +163,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8714317161665136642}
     m_Modifications:
-    - target: {fileID: 1572143400153738268, guid: 0eb71f579de613f489d6dae4479f7219, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3405417494184322904, guid: 0eb71f579de613f489d6dae4479f7219, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -210,10 +206,6 @@ PrefabInstance:
     - target: {fileID: 4392002336861150956, guid: 0eb71f579de613f489d6dae4479f7219, type: 3}
       propertyPath: m_Name
       value: RoadSegmentRightTurn
-      objectReference: {fileID: 0}
-    - target: {fileID: 4417944255433312261, guid: 0eb71f579de613f489d6dae4479f7219, type: 3}
-      propertyPath: allowedDirection
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -288,14 +280,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoadSegmentLeftTurn
       objectReference: {fileID: 0}
-    - target: {fileID: 4417944255433312261, guid: 7b12c1f30495df844abbe5ebc140cba3, type: 3}
-      propertyPath: allowedDirection
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6937601464906645682, guid: 7b12c1f30495df844abbe5ebc140cba3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -365,10 +349,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4050118735957365509, guid: a2deb738456a4184081aad9e2c628653, type: 3}
-      propertyPath: tiles
-      value: 
-      objectReference: {fileID: 669392053135576053}
     - target: {fileID: 4392002336861150956, guid: a2deb738456a4184081aad9e2c628653, type: 3}
       propertyPath: m_Name
       value: RoadSegment
@@ -378,17 +358,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2deb738456a4184081aad9e2c628653, type: 3}
---- !u!114 &669392053135576053 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4909752155881028628, guid: a2deb738456a4184081aad9e2c628653, type: 3}
-  m_PrefabInstance: {fileID: 5577946819308206049}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b1832625a0be7242935793bac148d7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &7073642357721354425 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3405417494184322904, guid: a2deb738456a4184081aad9e2c628653, type: 3}
