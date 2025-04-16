@@ -1,4 +1,4 @@
-﻿Shader "CurvedShader" {
+Shader "CurvedShader" {
 	Properties{
 		_Color("Color", Color) = (1,1,1,1)
 		_MainTex("Albedo (RGB)", 2D) = "white" {}
@@ -40,11 +40,16 @@
 
 	float _Curvature;
 	float _Trimming;
+	float3 _CurvatureDirection;
 
 	void vert(inout appdata_full v) {
 		v.vertex = mul(unity_ObjectToWorld, v.vertex);
+	
 		float dist = distance(_WorldSpaceCameraPos, v.vertex);
-		v.vertex.y -= pow(dist, _Curvature) * _Trimming / 100;
+		float possitive = _Curvature>0? 1: -1;
+		float3 dir = normalize(_CurvatureDirection);
+		v.vertex.xyz += dir * (possitive * pow(dist, abs(_Curvature)) * _Trimming / 100);
+		//v.vertex.x += possitive*pow(dist, abs(_Curvature)) * _Trimming / 100;
 		v.vertex = mul(unity_WorldToObject, v.vertex);
 	}
 

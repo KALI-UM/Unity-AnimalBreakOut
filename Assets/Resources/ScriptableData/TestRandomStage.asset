@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31e58d25770a108448b68e950c1723a7, type: 3}
-  m_Name: TestVerticalStage 1
+  m_Name: TestRandomStage
   m_EditorClassIdentifier: 
   isBossStage: 0
-  roadMode: 1
+  roadMode: 0
   itemSetMode: 0
   roadWayCount: 1
