@@ -177,17 +177,16 @@ public class PlayerManager : InGameManager
 
     private void DisablePlayer(PlayerStatus playerStatus)
     {
-        Debug.Log("input impossible");
         playerMove.DisableInput();  // 입력 비활성화
         // GameManager.UIManager?.SetDirectionButtonsInteractable(false);
     }
     private void EnablePlayer(PlayerStatus playerStatus)
     {
-        Debug.Log("input possible");
+
         playerMove.EnableInput();  // 입력 활성화
         // GameManager.UIManager?.SetDirectionButtonsInteractable(true);
     }
-    
+
     private void PlayDeathAnimation()
     {
         if (playerAnimator != null)

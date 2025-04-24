@@ -3,7 +3,6 @@
 
 using System.Collections;
 using Unity.EditorCoroutines.Editor;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -68,7 +67,6 @@ public static class GoogleSheetManager
             string csv = www.downloadHandler.text;
             DataTable.SaveCSV(csv, path);
         }
-        AssetDatabase.Refresh();
     }
 }
 #endif

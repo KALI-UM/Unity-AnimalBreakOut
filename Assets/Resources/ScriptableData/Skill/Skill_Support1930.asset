@@ -16,6 +16,6 @@ MonoBehaviour:
   skillType: 1
   level: 5
   skillGroup: LightningDam
-  iconImage: {fileID: 21300000, guid: 3bef90050916242a79ebffde797580a4, type: 3}
+  iconPrefab: Lightning_UP
   skillTarget: 7
   rate: 0.1

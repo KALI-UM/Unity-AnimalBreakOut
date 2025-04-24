@@ -35,10 +35,7 @@ public class SkillIcon : MonoBehaviour
         targetSkill = skill;
         levelText.text = skill.Level.ToString();
 
-        //iconImage.gameObject.name = targetSkill.SkillData.iconImage;
-        Debug.Log(iconImage);
         if (targetSkill.SkillData.skillType == SkillType.Attack)
-
         {
             attackSkill = skill as AttackSkill;
         }

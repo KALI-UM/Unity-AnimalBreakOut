@@ -26,10 +26,6 @@ public static class DataTableManager
         itemDataTable.Load(Utils.ItemTableName);
         tables.Add(Utils.ItemTableName, itemDataTable);
 
-        var inGameLevelExperienceTable = new InGameLevelExperienceDataTable();
-        inGameLevelExperienceTable.Load(Utils.InGameLevelExperienceValueTableName);
-        tables.Add(Utils.InGameLevelExperienceValueTableName, inGameLevelExperienceTable);
-
         var additionalStatusEffectTable = new AdditionalStatusEffectDataTable();
         additionalStatusEffectTable.Load(Utils.AdditionalStatusEffectTableName);
         tables.Add(Utils.AdditionalStatusEffectTableName, additionalStatusEffectTable);
@@ -40,8 +36,6 @@ public static class DataTableManager
 
     public static AnimalDataTable animalDataTable => Get<AnimalDataTable>(Utils.AnimalTableName);
     public static ItemDataTable itemDataTable => Get<ItemDataTable>(Utils.ItemTableName);
-
-    public static InGameLevelExperienceDataTable inGameLevelExperienceDataTable => Get<InGameLevelExperienceDataTable>(Utils.InGameLevelExperienceValueTableName);
 
     public static AdditionalStatusEffectDataTable additionalStatusEffectDataTable => Get<AdditionalStatusEffectDataTable>(Utils.AdditionalStatusEffectTableName);
 

@@ -16,6 +16,6 @@ MonoBehaviour:
   skillType: 1
   level: 4
   skillGroup: IceDam
-  iconImage: {fileID: 21300000, guid: e494221693ded4a86a1a4733bb3d9096, type: 3}
+  iconPrefab: Ice_UP
   skillTarget: 6
   rate: 0.08

@@ -16,7 +16,7 @@ MonoBehaviour:
   skillType: 0
   level: 1
   skillGroup: 0
-  iconImage: {fileID: 0}
+  iconPrefab: ATK_UP
   skillElemental: 3
   damageRate: 5
   projectileCount: 1

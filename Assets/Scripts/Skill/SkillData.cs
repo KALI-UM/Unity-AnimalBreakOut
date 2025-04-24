@@ -36,7 +36,7 @@ public class SkillData : ScriptableObject
     public SkillType skillType;
     public int level;
     public string skillGroup;
-    public Sprite iconImage;
+    public string iconPrefab;
 }
 
 

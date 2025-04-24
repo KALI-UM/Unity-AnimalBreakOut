@@ -16,7 +16,7 @@ MonoBehaviour:
   skillType: 0
   level: 3
   skillGroup: IceShot
-  iconImage: {fileID: 21300000, guid: ac71e624138b849d89920d54aba677b4, type: 3}
+  iconPrefab: ATK_UP
   skillElemental: 2
   damageRate: 0.5
   projectileCount: 5

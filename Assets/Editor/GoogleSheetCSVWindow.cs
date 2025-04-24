@@ -61,13 +61,13 @@ public class GoogleSheetCSVWindow : EditorWindow
 
 
         LoadDataTableGUI(additionalStatusEffectDataTableURL, Utils.AdditionalStatusEffectTableName);
-        LoadDataTableGUI(ingameLevelDataTableURL, Utils.InGameLevelExperienceValueTableName);
 
     }
 
     private void UpdateDataTableCSV(string url, string path)
     {
         GoogleSheetManager.Load(url, path);
+        AssetDatabase.Refresh();
     }
 
     private string animalDataTableURL = "https://docs.google.com/spreadsheets/d/1lgeY8ZIuS4VGB0Ii2VdqcRd126eV1GDp4h0aw2hoVBA/edit?gid=1280379651#gid=1280379651";
@@ -76,7 +76,7 @@ public class GoogleSheetCSVWindow : EditorWindow
     private string attackSkillDataTableURL = "https://docs.google.com/spreadsheets/d/1lgeY8ZIuS4VGB0Ii2VdqcRd126eV1GDp4h0aw2hoVBA/edit?gid=420672475#gid=420672475";
     private string supportSkillDataTableURL = "https://docs.google.com/spreadsheets/d/1lgeY8ZIuS4VGB0Ii2VdqcRd126eV1GDp4h0aw2hoVBA/edit?gid=831221530#gid=831221530";
     private string additionalStatusEffectDataTableURL = "https://docs.google.com/spreadsheets/d/1lgeY8ZIuS4VGB0Ii2VdqcRd126eV1GDp4h0aw2hoVBA/edit?gid=1871340178#gid=1871340178";
-    private string ingameLevelDataTableURL = "https://docs.google.com/spreadsheets/d/1lgeY8ZIuS4VGB0Ii2VdqcRd126eV1GDp4h0aw2hoVBA/edit?gid=2005332401#gid=2005332401";
+
     //private void UpdateAnimalDataTable()
     //{
     //    var path = System.IO.Path.Combine(Application.dataPath, "Resources/") + string.Format(DataTable.FormatPath, Utils.AnimalTableName) + ".csv";
@@ -124,7 +124,6 @@ public class GoogleSheetCSVWindow : EditorWindow
             AssetDatabase.CreateAsset(scriptableData, string.Format(dataPath, dataFileName));
             AssetDatabase.SaveAssets();
         }
-        AssetDatabase.Refresh();
     }
 
     private void CreateSupportSkillScriptableData()
@@ -148,9 +147,7 @@ public class GoogleSheetCSVWindow : EditorWindow
             AssetDatabase.CreateAsset(scriptableData, string.Format(dataPath, dataFileName));
             AssetDatabase.SaveAssets();
         }
-        AssetDatabase.Refresh();
     }
 
 }
-
 

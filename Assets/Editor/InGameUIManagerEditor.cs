@@ -34,7 +34,6 @@ public class InGameUIManagerEditor : Editor
                 }
             }
             AssetDatabase.Refresh();
-            EditorUtility.SetDirty(uiManager);
         }
 
         base.OnInspectorGUI();

@@ -1,15 +1,12 @@
 using System;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class SkillSelectionSystem
 {
     private SkillManager skillManager;
     private List<ISkill> skills;
 
-    private List<List<ISkill>> skillTypes = new();
-    private List<int> canSelectSkillCount = new();
-
+ 
     public Action<List<ISkill>> onSkillListUpdated;
 
     //없는 스킬 LV0, 있는 스킬 LV1~maxLV
@@ -20,14 +17,9 @@ public class SkillSelectionSystem
         skillManager = manager;
         this.skills = skills;
 
-        foreach (SkillType type in Enum.GetValues(typeof(SkillType)))
+        foreach (var item in skillManager.SkillFactory.SkillGroupKeys)
         {
-            foreach (var item in skillManager.SkillFactory.GetSkillGroupKeys(type))
-            {
-                selectableSkillGroupTable.Add(item, 0);
-            }
-            skillTypes.Add(new());
-            canSelectSkillCount.Add(skillManager.GetSkillTypeMaxCount(type));
+            selectableSkillGroupTable.Add(item, 0);
         }
     }
 
@@ -102,11 +94,6 @@ public class SkillSelectionSystem
     public void AddUpgradedSkill(ISkill skill)
     {
         UpgradeSkill(skill);
-        if (skill.Level >= ISkill.maxLevel)
-        {
-            canSelectSkillCount[(int)skill.SkillData.skillType]--;
-        }
-
         onSkillListUpdated?.Invoke(skills);
     }
 
@@ -125,14 +112,12 @@ public class SkillSelectionSystem
             AttackSkill attackSkill = skill as AttackSkill;
             attackSkill.AddOnReadyAction(() => skillManager.AddSkillToReadyQueue(item));
             attackSkill.OnReady();
-
         }
         else if (skillData.skillType == SkillType.Support)
         {
             skillManager.PerformSkill(skill);
         }
 
-        skillTypes[(int)skillData.skillType].Add(skill);
     }
 
     public void UpgradeSkill(ISkill skill)
@@ -141,45 +126,21 @@ public class SkillSelectionSystem
         selectableSkillGroupTable[skill.SkillGroup] = skill.Level;
     }
 
-    public string GetRandomSkillGroup(SkillType type)
+    public string GetRandomSkillGroup()
     {
-        int randomIndex = UnityEngine.Random.Range(0, skillManager.SkillFactory.GetSkillGroupKeys(type).Count);
-        string skillGroupName = skillManager.SkillFactory.GetSkillGroupKeys(type)[randomIndex];
-
-        return skillGroupName;
-    }
-
-    public string GetExistkillGroup(SkillType type)
-    {
-        int randomIndex = UnityEngine.Random.Range(0, skillTypes[(int)type].Count);
-        string skillGroupName = skillTypes[(int)type][randomIndex].SkillGroup;
+        int randomIndex = UnityEngine.Random.Range(0, skillManager.SkillFactory.SkillGroupCount);
+        string skillGroupName = skillManager.SkillFactory.SkillGroupKeys[randomIndex];
 
         return skillGroupName;
     }
 
     public void GetRandomSkillDatas(int count, List<SkillData> skillDatas)
     {
-        //두개뿐이라 가능한 코드
-        int attackCount = UnityEngine.Random.Range(0, Mathf.Min(count + 1, canSelectSkillCount[(int)SkillType.Attack]));
-        int supportCount = count - attackCount;
-
-        GetRandomSkillDatas(attackCount, SkillType.Attack, skillDatas);
-        GetRandomSkillDatas(supportCount, SkillType.Support, skillDatas);
-    }
-
-    private void GetRandomSkillDatas(int count, SkillType type, List<SkillData> skillDatas)
-    {
-        if (skillTypes[(int)type].Count >= skillManager.GetSkillTypeMaxCount(type))
-        {
-            GetExistSkillDatas(count, type, skillDatas);
-            return;
-        }
-
         for (int i = 0; i < count; i++)
         {
             while (true)
             {
-                string targetSkillGroup = GetRandomSkillGroup(type);
+                string targetSkillGroup = GetRandomSkillGroup();
 
                 int targetSkillLevel = selectableSkillGroupTable[targetSkillGroup];
                 if (targetSkillLevel >= ISkill.maxLevel)
@@ -187,38 +148,15 @@ public class SkillSelectionSystem
                     continue;
                 }
 
-                if (skillDatas.FindIndex((skill) => skill.skillGroup == targetSkillGroup) != -1)
+                foreach (var item in skillDatas)
                 {
-                    continue;
+                    if (skillDatas.FindIndex((skill) => skill.skillGroup == targetSkillGroup) != -1)
+                    {
+                        continue;
+                    }
                 }
 
-                var skillData = skillManager.SkillFactory.GetSkillData(type, targetSkillGroup, targetSkillLevel + 1);
-                skillDatas.Add(skillData);
-                break;
-            }
-        }
-    }
-
-    private void GetExistSkillDatas(int count, SkillType type, List<SkillData> skillDatas)
-    {
-        for (int i = 0; i < count; i++)
-        {
-            while (true)
-            {
-                string targetSkillGroup = GetExistkillGroup(type);
-
-                int targetSkillLevel = selectableSkillGroupTable[targetSkillGroup];
-                if (targetSkillLevel >= ISkill.maxLevel)
-                {
-                    continue;
-                }
-
-                if (skillDatas.FindIndex((skill) => skill.skillGroup == targetSkillGroup) != -1)
-                {
-                    continue;
-                }
-
-                var skillData = skillManager.SkillFactory.GetSkillData(type, targetSkillGroup, targetSkillLevel + 1);
+                var skillData = skillManager.SkillFactory.GetSkillData(targetSkillGroup, targetSkillLevel + 1);
                 skillDatas.Add(skillData);
                 break;
             }

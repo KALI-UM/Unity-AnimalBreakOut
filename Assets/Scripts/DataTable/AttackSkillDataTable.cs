@@ -21,8 +21,7 @@ public class AttackSkillRawData
     public int NameID { get; set; }
     public int DescriptionID { get; set; }
     public int EffectID { get; set; }
-    public string Prefab_Icon { get; set; }
-    public string Prefab_Asset { get; set; }
+    public string Prefab { get; set; }
 }
 public class AttackSkillDataTable : DataTable
 {

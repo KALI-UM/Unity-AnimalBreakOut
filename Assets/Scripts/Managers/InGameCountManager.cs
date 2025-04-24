@@ -42,12 +42,12 @@ public class InGameCountManager : InGameManager
     private void OnCoinAcquiredHandler(int amount)
     {
         coinCount += amount;
-        //Debug.Log(coinCount);
+        Debug.Log(coinCount);
     }
     private void OnScoreAcquiredHandler(long amount)
     {
         ScoreCount += amount;
-        //Debug.Log(ScoreCount);
+        Debug.Log(ScoreCount);
     }
     private void OnReviveAcquiredHandler(int amount)
     {

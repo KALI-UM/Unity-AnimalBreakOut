@@ -73,7 +73,7 @@ public abstract class SupportSkill : ISkill
 
     public virtual void UpgradeLevel()
     {
-        var nextSkillData = skillManager.SkillFactory.GetSkillData(SkillData.skillType, SkillData.skillGroup, Level + 1);
+        var nextSkillData = skillManager.SkillFactory.GetSkillData(SkillData.skillGroup, Level + 1);
     }
 
 }

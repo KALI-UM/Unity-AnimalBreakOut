@@ -6,7 +6,7 @@ using UnityEngine;
 public class ExperienceStatus : MonoBehaviour, IItemTaker
 {
     public int level = 1;
-    private int maxLevel = 30;
+    private int maxLevel = 20;
 
     public float ExperienceRatio
     {
@@ -26,9 +26,8 @@ public class ExperienceStatus : MonoBehaviour, IItemTaker
 
     private float additionalExperienceRate = 0f;
 
+    //임시
     private int experienceToNextLevel = 10;
-
-    private IReadOnlyList<InGameLevelExperienceDataTable.LevelExperence> experences;
 
     public Action<int, int> onLevelChange; //level, maxexp
     public Action<int, int> onAddValue; //add, sum
@@ -40,9 +39,6 @@ public class ExperienceStatus : MonoBehaviour, IItemTaker
 
     public void InitializeValue()
     {
-        experences = DataTableManager.inGameLevelExperienceDataTable.LevelExperences;
-        experienceToNextLevel = experences[level].NextLvExp;
-
         onLevelChange(level, experienceToNextLevel);
         onAddValue(0, (int)ExperienceValue);
     }
@@ -73,7 +69,6 @@ public class ExperienceStatus : MonoBehaviour, IItemTaker
     private void LevelUp()
     {
         level = Mathf.Clamp(level + 1, 1, maxLevel);
-        experienceToNextLevel = experences[level].NextLvExp;
         onLevelChange?.Invoke(level, experienceToNextLevel);
     }
 
@@ -81,11 +76,4 @@ public class ExperienceStatus : MonoBehaviour, IItemTaker
     {
         AddValue(value);
     }
-
-    [ContextMenu("ApplyValue100")]
-    public void ApplyValue100()
-    {
-        AddValue(100);
-    }
-
 }

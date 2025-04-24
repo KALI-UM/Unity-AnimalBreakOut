@@ -97,7 +97,7 @@ public class ReviveHandler
         playerManager.playerStatus.SetReviving(false);
         OnReviveCounting?.Invoke(1);
         countdownCoroutine = null;
-        //pauseHandler.Resume();
+        pauseHandler.Resume();
     }
 
 

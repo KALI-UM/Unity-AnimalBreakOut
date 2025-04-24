@@ -20,7 +20,6 @@ public class AttackSkillData : SkillData
 
 #if UNITY_EDITOR
     private string prefabPath = "Assets/Resources/Prefab/Skill/Projectile{0}.prefab";
-    private string iconPath = "Assets/Resources/SkillIcon/{0}.png";
     public void SetData(AttackSkillRawData rawData)
     {
         skillType = SkillType.Attack;
@@ -36,9 +35,7 @@ public class AttackSkillData : SkillData
         interval = rawData.Interval;
         coolDownTime = rawData.CoolTime;
         effectID = rawData.EffectID;
-
-        var sprite = AssetDatabase.LoadAssetAtPath<Sprite>(string.Format(iconPath, rawData.Prefab_Icon));
-        iconImage = sprite;
+        iconPrefab = rawData.Prefab;
 
         var prefab = AssetDatabase.LoadAssetAtPath<GameObject>(string.Format(prefabPath, skillElemental.ToString()));
         var projectile = prefab.GetComponent<ProjectileBehaviour>();
