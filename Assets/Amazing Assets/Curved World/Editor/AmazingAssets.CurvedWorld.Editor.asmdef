@@ -1,0 +1,18 @@
+{
+    "name": "AmazingAssets.CurvedWorld.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:8f86baa8f96ef8244b3b191961207c1b"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
