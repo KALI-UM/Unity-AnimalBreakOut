@@ -23,6 +23,7 @@ public class AttackSkillRawData
     public int EffectID { get; set; }
     public string Prefab_Icon { get; set; }
     public string Prefab_Asset { get; set; }
+    public bool SelectPossible { get; set; }
 }
 public class AttackSkillDataTable : DataTable
 {

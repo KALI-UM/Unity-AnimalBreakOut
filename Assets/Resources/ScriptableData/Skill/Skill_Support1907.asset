@@ -17,5 +17,6 @@ MonoBehaviour:
   level: 2
   skillGroup: SkillDam
   iconImage: {fileID: 21300000, guid: 854c238b2297645bab25408be6c79c01, type: 3}
+  selectPossible: 1
   skillTarget: 2
   rate: 0.04

@@ -14,19 +14,19 @@ public class TrapBomb : Trap
     
     protected override void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && !onCollision)
+        if (other.CompareTag(Utils.PlayerTag) && !onCollision)
         {
             onCollision = true;
 
             if (other.transform.position.y >= 1f)
             {
-                animator.SetTrigger("JumpAttack");
+                animator.SetTrigger(Utils.TrapBombAnimatorJumpAttackHash);
                 
                 StartCoroutine(JumpAttackAnimationControl());
             }
             else
             {
-                animator.SetTrigger("Attack");
+                animator.SetTrigger(Utils.TrapBombAnimatorAttackHash);
             }
             
             base.OnTriggerEnter(other);

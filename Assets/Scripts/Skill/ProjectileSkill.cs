@@ -16,6 +16,10 @@ public class ProjectileSkill : AttackSkill
 
     public override void Perform(Transform attackerTrs, Transform targetTrs, AttackPowerStatus attacker, DamageableStatus target)
     {
+        if (!skillManager.IsSkillTargetValid())
+        {
+            return;
+        }
         //간격이라던지 그런건 일단 차치하고 작성
         for (int i = 0; i < AttackSkillData.projectileCount; i++)
         {
@@ -56,7 +60,7 @@ public class ProjectileSkill : AttackSkill
             return;
         }
 
-        ApplyElementalEffect(target, AttackSkillData.skillElemental);
+        ApplyElementalEffect(attacker,target, AttackSkillData.skillElemental);
         for (int i = 0; i < count; i++)
         {
             AttackDamage(attacker.GetElementalAdditionalAttackPower(AttackSkillData.skillElemental) * AttackSkillData.damageRate, target);

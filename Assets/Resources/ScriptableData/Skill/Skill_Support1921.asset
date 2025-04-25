@@ -17,5 +17,6 @@ MonoBehaviour:
   level: 1
   skillGroup: IceDam
   iconImage: {fileID: 21300000, guid: e494221693ded4a86a1a4733bb3d9096, type: 3}
+  selectPossible: 1
   skillTarget: 6
   rate: 0.02

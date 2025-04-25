@@ -17,6 +17,7 @@ MonoBehaviour:
   level: 4
   skillGroup: Shock
   iconImage: {fileID: 21300000, guid: 2a864c7c023d249efb75c69a789665d3, type: 3}
+  selectPossible: 1
   skillElemental: 3
   damageRate: 0.5
   projectileCount: 8

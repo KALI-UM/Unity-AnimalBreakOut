@@ -36,7 +36,7 @@ public class ItemHuman : ItemBase
 
     protected override void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && !onCollision)
+        if (other.CompareTag(Utils.PlayerTag) && !onCollision)
         {
             onCollision = true;
 
@@ -48,7 +48,7 @@ public class ItemHuman : ItemBase
 
     private IEnumerator OnCollisionCoroutine()
     {
-        animator.Play(Utils.ItemHumanAnimatorDeadString, 1);
+        animator.Play(Utils.ItemHumanAnimatorDeadHash, 1);
 
         int randomDir = Random.value < 0.5f ? -1 : 1;
 
@@ -87,7 +87,7 @@ public class ItemHuman : ItemBase
         CollisionBehaviour = CollisionBehaviourFactory.GetHumanBehaviour(this.humanItemType);
         CollisionBehaviour.SetScoreToAdd(itemStatData.Score);
 
-        animator.Play(Utils.ItemHumanAnimatorDefaultString, 1);
+        animator.Play(Utils.ItemHumanAnimatorDefaultHash, 1);
 
         inActiveTimer = 0f;
         onCollision = false;

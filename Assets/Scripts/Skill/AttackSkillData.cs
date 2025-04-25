@@ -24,6 +24,7 @@ public class AttackSkillData : SkillData
     public void SetData(AttackSkillRawData rawData)
     {
         skillType = SkillType.Attack;
+        selectPossible = rawData.SelectPossible;
 
         skillID = rawData.SkillID;
         level = rawData.SkillLevel;

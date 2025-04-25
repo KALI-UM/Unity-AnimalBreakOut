@@ -146,7 +146,15 @@ public class SkillSelectionSystem
         int randomIndex = UnityEngine.Random.Range(0, skillManager.SkillFactory.GetSkillGroupKeys(type).Count);
         string skillGroupName = skillManager.SkillFactory.GetSkillGroupKeys(type)[randomIndex];
 
-        return skillGroupName;
+        if (skillManager.SkillFactory.GetSkillData(type, skillGroupName, 1).selectPossible)
+        {
+            return skillGroupName;
+        }
+        else
+        {
+            return GetRandomSkillGroup(type);
+        }
+
     }
 
     public string GetExistkillGroup(SkillType type)

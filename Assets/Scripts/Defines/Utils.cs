@@ -20,7 +20,18 @@ public static class Utils
     public const string AnimalSelectableString = "선택하기";
 
     public const string ItemHumanAnimatorDefaultString = "Default";
+    public static readonly int ItemHumanAnimatorDefaultHash = Animator.StringToHash(ItemHumanAnimatorDefaultString);
     public const string ItemHumanAnimatorDeadString = "Dead";
+    public static readonly int ItemHumanAnimatorDeadHash = Animator.StringToHash(ItemHumanAnimatorDeadString);
+
+    public const string TrapBombAnimatorJumpAttackString = "JumpAttack";
+    public static readonly int TrapBombAnimatorJumpAttackHash = Animator.StringToHash(TrapBombAnimatorJumpAttackString);
+    public const string TrapBombAnimatorAttackString = "Attack";
+    public static readonly int TrapBombAnimatorAttackHash = Animator.StringToHash(TrapBombAnimatorAttackString);
+
+    public const string BossAttackPattern1AnimatorString = "Attack1";
+    public const string BossAttackPattern2AnimatorString = "Attack2";
+    public const string BossDeathAnimatorString = "Death";
 
     public const float GameStartWaitTime = 1f;
 

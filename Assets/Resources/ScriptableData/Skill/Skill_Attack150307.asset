@@ -17,6 +17,7 @@ MonoBehaviour:
   level: 2
   skillGroup: Orb
   iconImage: {fileID: 21300000, guid: 408f844d73cc94d499d7eebb9502806b, type: 3}
+  selectPossible: 1
   skillElemental: 3
   damageRate: 1.1
   projectileCount: 1

@@ -17,6 +17,7 @@ MonoBehaviour:
   level: 3
   skillGroup: FireBall
   iconImage: {fileID: 21300000, guid: 305189244a781426183869347e2e12ba, type: 3}
+  selectPossible: 1
   skillElemental: 1
   damageRate: 1.9
   projectileCount: 3

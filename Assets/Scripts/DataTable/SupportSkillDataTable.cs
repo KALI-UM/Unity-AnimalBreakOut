@@ -18,6 +18,8 @@ public class SupportSkillRawData
     public int NameID { get; set; }
     public int DescriptionID { get; set; }
     public string Prefab { get; set; }
+
+    public bool SelectPossible { get; set; }
 }
 
 public class SupportSkillDataTable : DataTable

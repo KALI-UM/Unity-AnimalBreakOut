@@ -10,8 +10,6 @@ public class BurnStatusEffect : StatusEffect
 
     //임시
     public float effectInterval = 2f;
-    public int damageCount = 5;
-    public int damage;
 
     private Coroutine coPreformBurnEffect = null;
 
@@ -29,7 +27,7 @@ public class BurnStatusEffect : StatusEffect
 
     private void Start()
     {
-        SetEffectData(effectId);
+        SetEffectData(effectId, SkillElemental.Fire);
         SetDamagerableTarget(GetComponent<DamageableStatus>());
     }
 
@@ -43,7 +41,7 @@ public class BurnStatusEffect : StatusEffect
         return previousSkillId != skillID;
     }
 
-    public override void Perform(int skillID)
+    public override void Perform(int skillID, int elementalAttackPower)
     {
         if (!CanPerformID(skillID))
         {
@@ -61,16 +59,17 @@ public class BurnStatusEffect : StatusEffect
 
         coPreformBurnEffect = StartCoroutine(CoPerformBurnEffect());
 
+
     }
 
 
-    private IEnumerator CoPerformBurnEffect()
+    private IEnumerator CoPerformBurnEffect(int damage)
     {
         for (int i = 0; i < AdditionalStatusEffectData.AttackCount; i++)
         {
-            Debug.Log($"화상 효과 damage {i}번째 : {damage}");
+            Debug.Log($"화상 효과 damage {i}번째 : {damage*AdditionalStatusEffectData.Damage}");
 
-            target.OnDamage(damage);
+            target.OnDamage(damage * AdditionalStatusEffectData.Damage);
             yield return new WaitForSeconds(effectInterval);
         }
         isPerforming = false;

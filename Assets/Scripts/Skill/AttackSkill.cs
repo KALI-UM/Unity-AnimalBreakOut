@@ -80,7 +80,7 @@ public abstract class AttackSkill : ISkill
         target.OnDamage(damage, AttackSkillData.skillElemental);
     }
 
-    protected void ApplyElementalEffect(DamageableStatus target, SkillElemental elemental)
+    protected void ApplyElementalEffect(AttackPowerStatus attacker, DamageableStatus target, SkillElemental elemental)
     {
         var ui = skillManager.gameManager.UIManager.bossDebuffUI;
         string debuffId = null;

@@ -144,11 +144,25 @@ public enum BossRandomPatternSelectConditionType
     RandomValue,
 }
 
+public enum BossStatusConditionType
+{
+    IsBossDead,
+}
+
 public enum BossAttackPatternActionType
 {
     TestAttackToLane0 = -3,
     TestAttackToLane1 = -2,
     TestAttackToLane2 = -1,
+    
+    Boss1AttackAnimation1,
+    Boss1AttackAnimation2,
+    
+    Boss1AttackPattern1,
+    Boss1AttackPattern2,
+    Boss1AttackPattern3,
+    
+    BossDeathAnimation,
 }
 
 public enum BossConditionNodeType
@@ -160,12 +174,24 @@ public enum BossConditionNodeType
     Boss1Phase1Pattern2ChanceCondition,
     Boss1Phase2Pattern1ChanceCondition,
     Boss1Phase2Pattern2ChanceCondition,
+    
+    IsBossDeadCondition,
 }
 
 public enum BossTimerNodeType
 {
     Boss1Phase1AttackTimeDelayTimer,
     Boss1Phase2AttackTimeDelayTimer,
+    Boss1AttackPattern1AnimationTimeDelayTimer,
+    Boss1AttackPattern2AnimationTimeDelayTimer,
+    Boss1AttackPattern3AnimationTimeDelayTimer,
+}
+
+public enum BossDelayNodeType
+{
+    Boss1AttackPattern1Delay,
+    Boss1AttackPattern2Delay,
+    Boss1AttackPattern3Delay,
 }
 
 public enum BossActionNodeType
@@ -173,6 +199,9 @@ public enum BossActionNodeType
     Boss1AttackPattern1,
     Boss1AttackPattern2,
     Boss1AttackPattern3,
+    Boss1AttackAnimation1,
+    Boss1AttackAnimation2,
+    Boss1DeathAnimation,
 }
 
 public enum BossBehaviourTreeType

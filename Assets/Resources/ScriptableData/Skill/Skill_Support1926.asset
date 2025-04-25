@@ -17,5 +17,6 @@ MonoBehaviour:
   level: 1
   skillGroup: LightningDam
   iconImage: {fileID: 21300000, guid: 3bef90050916242a79ebffde797580a4, type: 3}
+  selectPossible: 1
   skillTarget: 7
   rate: 0.02

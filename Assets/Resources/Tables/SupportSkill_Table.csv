@@ -1,31 +1,31 @@
-SupportID,SupportType,SupportGroup,Level,Value,NameID,DescriptionID,Prefab
-1901,1,Exp,1,0.02,170531,170618,Skill_Icon_EXP
-1902,1,Exp,2,0.04,170532,170618,Skill_Icon_EXP
-1903,1,Exp,3,0.06,170533,170618,Skill_Icon_EXP
-1904,1,Exp,4,0.08,170534,170618,Skill_Icon_EXP
-1905,1,Exp,5,0.1,170535,170618,Skill_Icon_EXP
-1906,2,SkillDam,1,0.02,170536,170619,Skill_Icon_Damage
-1907,2,SkillDam,2,0.04,170537,170619,Skill_Icon_Damage
-1908,2,SkillDam,3,0.06,170538,170619,Skill_Icon_Damage
-1909,2,SkillDam,4,0.08,170539,170619,Skill_Icon_Damage
-1910,2,SkillDam,5,0.1,170540,170619,Skill_Icon_Damage
-1911,3,CoolDown,1,0.02,170541,170620,Skill_Icon_Cool Down
-1912,3,CoolDown,2,0.04,170542,170620,Skill_Icon_Cool Down
-1913,3,CoolDown,3,0.06,170543,170620,Skill_Icon_Cool Down
-1914,3,CoolDown,4,0.08,170544,170620,Skill_Icon_Cool Down
-1915,3,CoolDown,5,0.1,170545,170620,Skill_Icon_Cool Down
-1916,5,FireDam,1,0.02,170546,170621,Skill_Icon_Fire Attribute
-1917,5,FireDam,2,0.04,170547,170621,Skill_Icon_Fire Attribute
-1918,5,FireDam,3,0.06,170548,170621,Skill_Icon_Fire Attribute
-1919,5,FireDam,4,0.08,170549,170621,Skill_Icon_Fire Attribute
-1920,5,FireDam,5,0.1,170550,170621,Skill_Icon_Fire Attribute
-1921,6,IceDam,1,0.02,170551,170622,Skill_Icon_Ice Damage
-1922,6,IceDam,2,0.04,170552,170622,Skill_Icon_Ice Damage
-1923,6,IceDam,3,0.06,170553,170622,Skill_Icon_Ice Damage
-1924,6,IceDam,4,0.08,170554,170622,Skill_Icon_Ice Damage
-1925,6,IceDam,5,0.1,170555,170622,Skill_Icon_Ice Damage
-1926,7,LightningDam,1,0.02,170556,170623,Skill_Icon_Lightning Attribute
-1927,7,LightningDam,2,0.04,170557,170623,Skill_Icon_Lightning Attribute
-1928,7,LightningDam,3,0.06,170558,170623,Skill_Icon_Lightning Attribute
-1929,7,LightningDam,4,0.08,170559,170623,Skill_Icon_Lightning Attribute
-1930,7,LightningDam,5,0.1,170560,170623,Skill_Icon_Lightning Attribute
+SupportID,SupportType,SupportGroup,Level,Value,NameID,DescriptionID,Prefab,SelectPossible
+1901,1,Exp,1,0.02,170531,170618,Skill_Icon_EXP,TRUE
+1902,1,Exp,2,0.04,170532,170618,Skill_Icon_EXP,TRUE
+1903,1,Exp,3,0.06,170533,170618,Skill_Icon_EXP,TRUE
+1904,1,Exp,4,0.08,170534,170618,Skill_Icon_EXP,TRUE
+1905,1,Exp,5,0.1,170535,170618,Skill_Icon_EXP,TRUE
+1906,2,SkillDam,1,0.02,170536,170619,Skill_Icon_Damage,TRUE
+1907,2,SkillDam,2,0.04,170537,170619,Skill_Icon_Damage,TRUE
+1908,2,SkillDam,3,0.06,170538,170619,Skill_Icon_Damage,TRUE
+1909,2,SkillDam,4,0.08,170539,170619,Skill_Icon_Damage,TRUE
+1910,2,SkillDam,5,0.1,170540,170619,Skill_Icon_Damage,TRUE
+1911,3,CoolDown,1,0.02,170541,170620,Skill_Icon_Cool Down,TRUE
+1912,3,CoolDown,2,0.04,170542,170620,Skill_Icon_Cool Down,TRUE
+1913,3,CoolDown,3,0.06,170543,170620,Skill_Icon_Cool Down,TRUE
+1914,3,CoolDown,4,0.08,170544,170620,Skill_Icon_Cool Down,TRUE
+1915,3,CoolDown,5,0.1,170545,170620,Skill_Icon_Cool Down,TRUE
+1916,5,FireDam,1,0.02,170546,170621,Skill_Icon_Fire Attribute,TRUE
+1917,5,FireDam,2,0.04,170547,170621,Skill_Icon_Fire Attribute,TRUE
+1918,5,FireDam,3,0.06,170548,170621,Skill_Icon_Fire Attribute,TRUE
+1919,5,FireDam,4,0.08,170549,170621,Skill_Icon_Fire Attribute,TRUE
+1920,5,FireDam,5,0.1,170550,170621,Skill_Icon_Fire Attribute,TRUE
+1921,6,IceDam,1,0.02,170551,170622,Skill_Icon_Ice Damage,TRUE
+1922,6,IceDam,2,0.04,170552,170622,Skill_Icon_Ice Damage,TRUE
+1923,6,IceDam,3,0.06,170553,170622,Skill_Icon_Ice Damage,TRUE
+1924,6,IceDam,4,0.08,170554,170622,Skill_Icon_Ice Damage,TRUE
+1925,6,IceDam,5,0.1,170555,170622,Skill_Icon_Ice Damage,TRUE
+1926,7,LightningDam,1,0.02,170556,170623,Skill_Icon_Lightning Attribute,TRUE
+1927,7,LightningDam,2,0.04,170557,170623,Skill_Icon_Lightning Attribute,TRUE
+1928,7,LightningDam,3,0.06,170558,170623,Skill_Icon_Lightning Attribute,TRUE
+1929,7,LightningDam,4,0.08,170559,170623,Skill_Icon_Lightning Attribute,TRUE
+1930,7,LightningDam,5,0.1,170560,170623,Skill_Icon_Lightning Attribute,TRUE

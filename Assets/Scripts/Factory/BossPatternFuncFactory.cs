@@ -22,12 +22,21 @@ public static class BossPatternFuncFactory
                 { BossRandomPatternSelectConditionType.RandomValue, chance => bossBehaviourController => bossBehaviourController.BossPatternSelectRandomValue <= chance}
             };
 
+    private static readonly Dictionary<BossStatusConditionType, Func<BossBehaviourController, bool>>
+        BossStatusConditions = new()
+        {
+            { BossStatusConditionType.IsBossDead, bossBehaviourController => bossBehaviourController.BossStatus.isDead},
+        };
+    
     private static readonly Dictionary<BossAttackPatternActionType, Func<BossBehaviourController, BTNodeState>> 
         BossAttackPatternActions = new()
             {
                 { BossAttackPatternActionType.TestAttackToLane0, TestAttackToLane0},
                 { BossAttackPatternActionType.TestAttackToLane1, TestAttackToLane1},
                 { BossAttackPatternActionType.TestAttackToLane2, TestAttackToLane2},
+                { BossAttackPatternActionType.Boss1AttackAnimation1, PlayBossAttackPattern1Animation},
+                {BossAttackPatternActionType.Boss1AttackAnimation2, PlayBossAttackPattern2Animation},
+                { BossAttackPatternActionType.BossDeathAnimation, PlayBossDeathAnimation}
             };
 
     public static Func<BossBehaviourController, bool> GetBossHpCondition(BossHpConditionType type, float hpValue)
@@ -66,6 +75,18 @@ public static class BossPatternFuncFactory
         return null;
     }
 
+    public static Func<BossBehaviourController, bool> GetBossStatusCondition(BossStatusConditionType type)
+    {
+        if (BossStatusConditions.TryGetValue(type, out var func))
+        {
+            return func;
+        }
+        
+        Debug.Assert(false, $"Cant find BossStatusCondition in BossStatusConditionType: {type}");
+        
+        return null;
+    }
+
     public static Func<BossBehaviourController, BTNodeState> GetBossAttackPatternAction(BossAttackPatternActionType type)
     {
         if (BossAttackPatternActions.TryGetValue(type, out var func))
@@ -80,7 +101,7 @@ public static class BossPatternFuncFactory
     
     private static BTNodeState TestAttackToLane0(BossBehaviourController bossBehaviourController)
     {
-        Vector3 attackPosition = bossBehaviourController.Lane.LaneIndexToPosition(0);
+        Vector3 attackPosition = bossBehaviourController.GetLaneAttackPosition(0);
         var tempBossProjectile = bossBehaviourController.TempBossProjectilePool.Get();
         tempBossProjectile.TryGetComponent(out TempBossProjectile tempBossProjectileComponent);
         tempBossProjectile.transform.SetParent(bossBehaviourController.transform);
@@ -94,12 +115,14 @@ public static class BossPatternFuncFactory
 
         AfterUsingNormalPattern(bossBehaviourController);
         
+        Debug.Log("Attack1");
+        
         return BTNodeState.Success;
     }
     
     private static BTNodeState TestAttackToLane1(BossBehaviourController bossBehaviourController)
     {
-        Vector3 attackPosition = bossBehaviourController.Lane.LaneIndexToPosition(1);
+        Vector3 attackPosition = bossBehaviourController.GetLaneAttackPosition(1);
         var tempBossProjectile = bossBehaviourController.TempBossProjectilePool.Get();
         tempBossProjectile.TryGetComponent(out TempBossProjectile tempBossProjectileComponent);
         tempBossProjectile.transform.SetParent(bossBehaviourController.transform);
@@ -113,12 +136,14 @@ public static class BossPatternFuncFactory
         
         AfterUsingNormalPattern(bossBehaviourController);
         
+        Debug.Log("Attack2");
+        
         return BTNodeState.Success;
     }
     
     private static BTNodeState TestAttackToLane2(BossBehaviourController bossBehaviourController)
     {
-        Vector3 attackPosition = bossBehaviourController.Lane.LaneIndexToPosition(2);
+        Vector3 attackPosition = bossBehaviourController.GetLaneAttackPosition(2);
         var tempBossProjectile = bossBehaviourController.TempBossProjectilePool.Get();
         tempBossProjectile.TryGetComponent(out TempBossProjectile tempBossProjectileComponent);
         tempBossProjectile.transform.SetParent(bossBehaviourController.transform);
@@ -131,6 +156,50 @@ public static class BossPatternFuncFactory
         bossBehaviourController.TempBossProjectileList.Add(tempBossProjectile);
         
         AfterUsingSpecialPattern(bossBehaviourController);
+        
+        Debug.Log("Attack3");
+        
+        return BTNodeState.Success;
+    }
+
+    private static BTNodeState PlayBossAttackPattern1Animation(BossBehaviourController bossBehaviourController)
+    {
+        var isPlayAnimation = bossBehaviourController.PlayAnimation(Utils.BossAttackPattern2AnimatorString);
+
+        if (!isPlayAnimation)
+        {
+            Debug.Assert(false, "Cant play Animation.");
+            
+            return BTNodeState.Failure;
+        }
+        
+        return BTNodeState.Success;
+    }
+    
+    private static BTNodeState PlayBossAttackPattern2Animation(BossBehaviourController bossBehaviourController)
+    {
+        var isPlayAnimation = bossBehaviourController.PlayAnimation(Utils.BossAttackPattern1AnimatorString);
+        
+        if (!isPlayAnimation)
+        {
+            Debug.Assert(false, "Cant play Animation.");
+            
+            return BTNodeState.Failure;
+        }
+        
+        return BTNodeState.Success;
+    }
+
+    private static BTNodeState PlayBossDeathAnimation(BossBehaviourController bossBehaviourController)
+    {
+        var isPlayAnimation = bossBehaviourController.PlayAnimation(Utils.BossDeathAnimatorString);
+
+        if (!isPlayAnimation)
+        {
+            Debug.Assert(false, "Cant play Animation.");
+            
+            return BTNodeState.Failure;
+        }
         
         return BTNodeState.Success;
     }

@@ -63,5 +63,5 @@ MonoBehaviour:
   fire: {fileID: 11400000, guid: a20c4981754b6fa4dbd53ff8d78d0aa2, type: 2}
   ice: {fileID: 11400000, guid: 4db91d3abe2d1fa46813508ba3d15443, type: 2}
   electicity: {fileID: 11400000, guid: 49bda90803f7d8b44b62d5405a0f678f, type: 2}
-  support: {fileID: 11400000, guid: d3a749a7ce3bb784ab9cacbc4d9c815b, type: 2}
+  support: {fileID: 11400000, guid: 3b259c3e8ebf8a24d99491afa72672f4, type: 2}
   skillManager: {fileID: 5718382043914706824}

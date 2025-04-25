@@ -114,14 +114,20 @@ public class GoogleSheetCSVWindow : EditorWindow
         {
             var data = attackSkillDataTable.Get(key);
             string dataFileName = string.Format(dataFileNameFormat, data.SkillID);
-            //이미 있으면 삭제
-            AssetDatabase.DeleteAsset(string.Format(dataPath, dataFileName));
 
-            //해당 데이터 ScriptableObject생성
-            AttackSkillData scriptableData = ScriptableObject.CreateInstance<AttackSkillData>();
-            scriptableData.SetData(data);
-
-            AssetDatabase.CreateAsset(scriptableData, string.Format(dataPath, dataFileName));
+            AttackSkillData scriptableData = AssetDatabase.LoadAssetAtPath<AttackSkillData>(string.Format(dataPath, dataFileName));
+            //AssetDatabase.DeleteAsset(string.Format(dataPath, dataFileName));
+            if (scriptableData == null)
+            {
+                //해당 데이터 ScriptableObject생성
+                scriptableData = ScriptableObject.CreateInstance<AttackSkillData>();
+                scriptableData.SetData(data);
+                AssetDatabase.CreateAsset(scriptableData, string.Format(dataPath, dataFileName));
+            }
+            else
+            {
+                scriptableData.SetData(data);
+            }
             AssetDatabase.SaveAssets();
         }
         AssetDatabase.Refresh();
@@ -138,14 +144,21 @@ public class GoogleSheetCSVWindow : EditorWindow
         {
             var data = supportSkillDataTable.Get(key);
             string dataFileName = string.Format(dataFileNameFormat, data.SupportID);
-            //이미 있으면 삭제
-            AssetDatabase.DeleteAsset(string.Format(dataPath, dataFileName));
 
-            //해당 데이터 ScriptableObject생성
-            SupportSkillData scriptableData = ScriptableObject.CreateInstance<SupportSkillData>();
-            scriptableData.SetData(data);
+            SupportSkillData scriptableData = AssetDatabase.LoadAssetAtPath<SupportSkillData>(string.Format(dataPath, dataFileName));
+            //AssetDatabase.DeleteAsset(string.Format(dataPath, dataFileName));
+            if (scriptableData == null)
+            {
+                //해당 데이터 ScriptableObject생성
+                scriptableData = ScriptableObject.CreateInstance<SupportSkillData>();
+                scriptableData.SetData(data);
+                AssetDatabase.CreateAsset(scriptableData, string.Format(dataPath, dataFileName));
+            }
+            else
+            {
+                scriptableData.SetData(data);
+            }
 
-            AssetDatabase.CreateAsset(scriptableData, string.Format(dataPath, dataFileName));
             AssetDatabase.SaveAssets();
         }
         AssetDatabase.Refresh();

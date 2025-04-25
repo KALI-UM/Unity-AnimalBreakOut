@@ -17,6 +17,7 @@ MonoBehaviour:
   level: 2
   skillGroup: Meteor
   iconImage: {fileID: 21300000, guid: 355aa2c5905c74eddb4f2e4cd615a8d9, type: 3}
+  selectPossible: 1
   skillElemental: 1
   damageRate: 5.5
   projectileCount: 1

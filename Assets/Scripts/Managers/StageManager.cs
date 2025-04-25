@@ -30,14 +30,14 @@ public class StageManager : InGameManager
 
     private void Awake()
     {
-        BossStatus.onBossDead += OnBossStageClear;
+        BossStatus.onBossDeathAnimationEnded += OnBossStageClear;
 
         onBossStageEnter += () => IsPlayerInBossStage = true;
     }
 
     private void OnDestroy()
     {
-        BossStatus.onBossDead -= OnBossStageClear;
+        BossStatus.onBossDeathAnimationEnded -= OnBossStageClear;
     }
 
     public override void Initialize()

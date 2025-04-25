@@ -1,32 +1,32 @@
-SkillID,SkillType,SkillGroup,SkillLevel,Attribute,Damage,ProjectileCount,AttackCount,CoolTime,Speed,Interval,NameID,DescriptionID,EffectID,Prefab_Icon,Prefab_Asset
-150101,1,FireBall,1,1,1.5,1,1,10,1,0,170501,170601,1601,Skill_Icon_Fireball,Skill_FireBall
-150102,1,FireBall,2,1,1.7,2,1,10,1,0.5,170502,170602,1601,Skill_Icon_Fireball,Skill_FireBall
-150103,1,FireBall,3,1,1.9,3,1,9,1,0.5,170503,170602,1601,Skill_Icon_Fireball,Skill_FireBall
-150104,1,FireBall,4,1,2.1,4,1,8,1,0.5,170504,170602,1601,Skill_Icon_Fireball,Skill_FireBall
-150105,1,FireBall,5,1,2.5,5,2,8,1,0.5,170505,170603,1601,Skill_Icon_Fireball,Skill_FireBall
-150106,1,Meteor,1,1,5,1,1,15,1,0,170506,170604,1601,Skill_Icon_Meteor,Skill_Meteor
-150107,1,Meteor,2,1,5.5,1,1,14,1,0,170507,170605,1601,Skill_Icon_Meteor,Skill_Meteor
-150108,1,Meteor,3,1,6,1,1,13,1,0,170508,170605,1601,Skill_Icon_Meteor,Skill_Meteor
-150109,1,Meteor,4,1,6.5,1,1,12,1,0,170509,170605,1601,Skill_Icon_Meteor,Skill_Meteor
-150110,1,Meteor,5,1,6.5,1,2,11,1,0,170510,170606,1601,Skill_Icon_Meteor,Skill_Meteor
-150201,1,Blizzard,1,2,0.1,15,1,10,1,1,170511,170607,1602,Skill_Icon_Blizzard,Skill_Blizzard
-150202,1,Blizzard,2,2,0.12,15,1,10,1,1,170512,170608,1602,Skill_Icon_Blizzard,Skill_Blizzard
-150203,1,Blizzard,3,2,0.14,15,1,10,1,1,170513,170608,1602,Skill_Icon_Blizzard,Skill_Blizzard
-150204,1,Blizzard,4,2,0.16,15,1,10,1,1,170514,170608,1602,Skill_Icon_Blizzard,Skill_Blizzard
-150205,1,Blizzard,5,2,0.2,15,2,10,1,1,170515,170609,1602,Skill_Icon_Blizzard,Skill_Blizzard
-150206,1,IceShot,1,2,0.5,3,1,12,1,0,170516,170610,1602,Skill_Icon_IceShot,Skill_IceShot
-150207,1,IceShot,2,2,0.5,4,1,11,1,0.5,170517,170611,1602,Skill_Icon_IceShot,Skill_IceShot
-150208,1,IceShot,3,2,0.5,5,1,10,1,0.5,170518,170611,1602,Skill_Icon_IceShot,Skill_IceShot
-150209,1,IceShot,4,2,0.5,6,1,10,1,0.5,170519,170611,1602,Skill_Icon_IceShot,Skill_IceShot
-150210,1,IceShot,5,2,0.5,6,2,9,1,0.5,170520,170612,1602,Skill_Icon_IceShot,Skill_IceShot
-150301,1,Shock,1,3,0.5,2,1,13,1,0,170521,170613,1603,Skill_Icon_Lightning Shock,Skill_Lightning Shock
-150302,1,Shock,2,3,0.5,4,1,13,1,0.5,170522,170614,1603,Skill_Icon_Lightning Shock,Skill_Lightning Shock
-150303,1,Shock,3,3,0.5,6,1,12,1,0.5,170523,170614,1603,Skill_Icon_Lightning Shock,Skill_Lightning Shock
-150304,1,Shock,4,3,0.5,8,1,12,1,0.5,170524,170614,1603,Skill_Icon_Lightning Shock,Skill_Lightning Shock
-150305,1,Shock,5,3,0.5,10,1,12,1,0.5,170525,170614,1603,Skill_Icon_Lightning Shock,Skill_Lightning Shock
-150306,1,Orb,1,3,1,1,3,14,1,0,170526,170615,1603,Skill_Icon_Lightning Orb,Skill_Lightning Orb
-150307,1,Orb,2,3,1.1,1,3,14,1,0,170527,170616,1603,Skill_Icon_Lightning Orb,Skill_Lightning Orb
-150308,1,Orb,3,3,1.2,1,3,13,1,0,170528,170616,1603,Skill_Icon_Lightning Orb,Skill_Lightning Orb
-150309,1,Orb,4,3,1.3,1,3,12,1,0,170529,170616,1603,Skill_Icon_Lightning Orb,Skill_Lightning Orb
-150310,1,Orb,5,3,1.7,1,3,10,1,0,170530,170617,1603,Skill_Icon_Lightning Orb,Skill_Lightning Orb
-150311,3,0,1,3,5,1,5,0,1,0,0,0,0,0,0
+SkillID,SkillType,SkillGroup,SkillLevel,Attribute,Damage,ProjectileCount,AttackCount,CoolTime,Speed,Interval,NameID,DescriptionID,EffectID,Prefab_Icon,Prefab_Asset,SelectPossible
+150101,1,FireBall,1,1,1.5,1,1,10,1,0,170501,170601,1601,Skill_Icon_Fireball,Skill_FireBall,TRUE
+150102,1,FireBall,2,1,1.7,2,1,10,1,0.5,170502,170602,1601,Skill_Icon_Fireball,Skill_FireBall,TRUE
+150103,1,FireBall,3,1,1.9,3,1,9,1,0.5,170503,170602,1601,Skill_Icon_Fireball,Skill_FireBall,TRUE
+150104,1,FireBall,4,1,2.1,4,1,8,1,0.5,170504,170602,1601,Skill_Icon_Fireball,Skill_FireBall,TRUE
+150105,1,FireBall,5,1,2.5,5,2,8,1,0.5,170505,170603,1601,Skill_Icon_Fireball,Skill_FireBall,TRUE
+150106,1,Meteor,1,1,5,1,1,15,1,0,170506,170604,1601,Skill_Icon_Meteor,Skill_Meteor,TRUE
+150107,1,Meteor,2,1,5.5,1,1,14,1,0,170507,170605,1601,Skill_Icon_Meteor,Skill_Meteor,TRUE
+150108,1,Meteor,3,1,6,1,1,13,1,0,170508,170605,1601,Skill_Icon_Meteor,Skill_Meteor,TRUE
+150109,1,Meteor,4,1,6.5,1,1,12,1,0,170509,170605,1601,Skill_Icon_Meteor,Skill_Meteor,TRUE
+150110,1,Meteor,5,1,6.5,1,2,11,1,0,170510,170606,1601,Skill_Icon_Meteor,Skill_Meteor,TRUE
+150201,1,Blizzard,1,2,0.1,15,1,10,1,1,170511,170607,1602,Skill_Icon_Blizzard,Skill_Blizzard,TRUE
+150202,1,Blizzard,2,2,0.12,15,1,10,1,1,170512,170608,1602,Skill_Icon_Blizzard,Skill_Blizzard,TRUE
+150203,1,Blizzard,3,2,0.14,15,1,10,1,1,170513,170608,1602,Skill_Icon_Blizzard,Skill_Blizzard,TRUE
+150204,1,Blizzard,4,2,0.16,15,1,10,1,1,170514,170608,1602,Skill_Icon_Blizzard,Skill_Blizzard,TRUE
+150205,1,Blizzard,5,2,0.2,15,2,10,1,1,170515,170609,1602,Skill_Icon_Blizzard,Skill_Blizzard,TRUE
+150206,1,IceShot,1,2,0.5,3,1,12,1,0,170516,170610,1602,Skill_Icon_IceShot,Skill_IceShot,TRUE
+150207,1,IceShot,2,2,0.5,4,1,11,1,0.5,170517,170611,1602,Skill_Icon_IceShot,Skill_IceShot,TRUE
+150208,1,IceShot,3,2,0.5,5,1,10,1,0.5,170518,170611,1602,Skill_Icon_IceShot,Skill_IceShot,TRUE
+150209,1,IceShot,4,2,0.5,6,1,10,1,0.5,170519,170611,1602,Skill_Icon_IceShot,Skill_IceShot,TRUE
+150210,1,IceShot,5,2,0.5,6,2,9,1,0.5,170520,170612,1602,Skill_Icon_IceShot,Skill_IceShot,TRUE
+150301,1,Shock,1,3,0.5,2,1,13,1,0,170521,170613,1603,Skill_Icon_Lightning Shock,Skill_Lightning Shock,TRUE
+150302,1,Shock,2,3,0.5,4,1,13,1,0.5,170522,170614,1603,Skill_Icon_Lightning Shock,Skill_Lightning Shock,TRUE
+150303,1,Shock,3,3,0.5,6,1,12,1,0.5,170523,170614,1603,Skill_Icon_Lightning Shock,Skill_Lightning Shock,TRUE
+150304,1,Shock,4,3,0.5,8,1,12,1,0.5,170524,170614,1603,Skill_Icon_Lightning Shock,Skill_Lightning Shock,TRUE
+150305,1,Shock,5,3,0.5,10,1,12,1,0.5,170525,170614,1603,Skill_Icon_Lightning Shock,Skill_Lightning Shock,TRUE
+150306,1,Orb,1,3,1,1,3,14,1,0,170526,170615,1603,Skill_Icon_Lightning Orb,Skill_Lightning Orb,TRUE
+150307,1,Orb,2,3,1.1,1,3,14,1,0,170527,170616,1603,Skill_Icon_Lightning Orb,Skill_Lightning Orb,TRUE
+150308,1,Orb,3,3,1.2,1,3,13,1,0,170528,170616,1603,Skill_Icon_Lightning Orb,Skill_Lightning Orb,TRUE
+150309,1,Orb,4,3,1.3,1,3,12,1,0,170529,170616,1603,Skill_Icon_Lightning Orb,Skill_Lightning Orb,TRUE
+150310,1,Orb,5,3,1.7,1,3,10,1,0,170530,170617,1603,Skill_Icon_Lightning Orb,Skill_Lightning Orb,TRUE
+150311,3,0,1,3,5,1,5,0,1,0,0,0,0,0,0,FALSE

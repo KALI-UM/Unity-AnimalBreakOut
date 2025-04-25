@@ -17,6 +17,7 @@ MonoBehaviour:
   level: 2
   skillGroup: Blizzard
   iconImage: {fileID: 21300000, guid: fc33854b590f64fbf982ca53f3141a0e, type: 3}
+  selectPossible: 1
   skillElemental: 2
   damageRate: 0.12
   projectileCount: 15

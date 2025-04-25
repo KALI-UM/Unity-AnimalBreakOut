@@ -12,7 +12,7 @@ public class BossHpSlider : MonoBehaviour
         gameObject.SetActive(false);
         
         BossManager.onSpawnBoss += OnSpawnBossHandler;
-        BossStatus.onBossDead += OnBossDeadHandler;
+        BossStatus.onBossDeathAnimationEnded += OnBossDeadHandler;
         BossStatus.onBossCurrentHpChanged += OnBossCurrentHpChangedHandler;
         GameUIManager.onShowGameOverPanel += OnShowGameOverPanelHandler;
     }
@@ -25,7 +25,7 @@ public class BossHpSlider : MonoBehaviour
     private void OnDestroy()
     {
         BossManager.onSpawnBoss -= OnSpawnBossHandler;
-        BossStatus.onBossDead -= OnBossDeadHandler;
+        BossStatus.onBossDeathAnimationEnded -= OnBossDeadHandler;
         BossStatus.onBossCurrentHpChanged -= OnBossCurrentHpChangedHandler;
         GameUIManager.onShowGameOverPanel -= OnShowGameOverPanelHandler;
     }

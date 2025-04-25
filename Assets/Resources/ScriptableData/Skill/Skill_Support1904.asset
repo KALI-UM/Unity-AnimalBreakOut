@@ -17,5 +17,6 @@ MonoBehaviour:
   level: 4
   skillGroup: Exp
   iconImage: {fileID: 21300000, guid: 61e7dcf18b9aa441694034fd0ab12250, type: 3}
+  selectPossible: 1
   skillTarget: 1
   rate: 0.08

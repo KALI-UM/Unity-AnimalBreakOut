@@ -6,12 +6,20 @@ public abstract class StatusEffect : MonoBehaviour
 {
     public abstract void SetDamagerableTarget(DamageableStatus damageable);
 
+
     protected BossDebuffUIController debuffUI;
 
     public void SetDebuffUI(BossDebuffUIController ui)
     {
         debuffUI = ui;
     }
+
+    public SkillElemental Elemental
+    {
+        get;
+        private set;
+    }
+
 
     public AdditionalStatusEffectData AdditionalStatusEffectData
     {
@@ -29,10 +37,17 @@ public abstract class StatusEffect : MonoBehaviour
         get;
     }
 
-    public void SetEffectData(int effectId)
+    public void SetEffectData(int effectId, SkillElemental skillElemental)
     {
+        Elemental = skillElemental;
         AdditionalStatusEffectData = DataTableManager.additionalStatusEffectDataTable.Get(effectId);
     }
 
-    public abstract void Perform(int skillID);
+    protected SkillManager skillManager;
+    public virtual void InitializeSkillManager(SkillManager skillManager)
+    {
+        this.skillManager = skillManager;
+    }
+
+    public abstract void Perform(int skillID, int elementalAttackPower);
 }

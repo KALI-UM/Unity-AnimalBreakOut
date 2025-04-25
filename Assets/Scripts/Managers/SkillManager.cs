@@ -137,13 +137,13 @@ public class SkillManager : InGameManager
 
     private IEnumerator CoroutinePerformSkill()
     {
-        if (skillTarget.IsDestroyed())
-        {
-            yield break;
-        }
-
         while (readySkillQueue.Count != 0)
         {
+            if (!IsSkillTargetValid())
+            {
+                yield break;
+            }
+
             var currentSkill = readySkillQueue.Dequeue();
             PerformSkill(currentSkill);
             yield return new WaitForSeconds(skillPerformInterval);
@@ -173,6 +173,11 @@ public class SkillManager : InGameManager
     private void OnSpawnBossHandler(BossStatus boss)
     {
         skillTarget = boss;
+
+        foreach(var effect in skillTarget.GetComponents<StatusEffect>())
+        {
+            effect.InitializeSkillManager(this);
+        }
     }
 
     public bool IsSkillTargetValid()
