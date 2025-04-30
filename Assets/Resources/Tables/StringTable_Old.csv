@@ -1,0 +1,222 @@
+Key,Korean (South Korea)(ko-KR),English (United States)(en-US)
+ACHIEVEMENT_NAME_ITEMCOLLECTOR_NEWBIE,아이템 수집의 시작,Newbie of Item Collector
+ACHIEVEMENT_NAME_ITEMCOLLECTOR_GOSU,아이템 수집의 고수,Gosu of Item Collector
+ACHIEVEMENT_NAME_ITEMCOLLECTOR_LEGEND,아이템 수집의 전설,Legend of Item Collector
+ACHIEVEMENT_NAME_ITEMCOLLECTOR_MASTER,아이템 수집의 장인,Master of Item Collector
+ACHIEVEMENT_NAME_ITEMCOLLECTOR_EXPORT,아이템 수집의 달인,Export of Item Collector
+ACHIEVEMENT_NAME_RECORDHOLDER_NEWBIE,기록 달성의 시작,Newbie of Record Holder
+ACHIEVEMENT_NAME_RECORDHOLDER_GOSU,기록 달성의 고수,Gosu of Record Holder
+ACHIEVEMENT_NAME_RECORDHOLDER_LEGEND,기록 달성의 전설,Legend of Record Holder
+ACHIEVEMENT_NAME_RECORDHOLDER_MASTER,기록 달성의 장인,Master of Record Holder
+ACHIEVEMENT_NAME_RECORDHOLDER_EXPORT,기록 달성의 달인,Export of Record Holder
+ACHIEVEMENT_NAME_ANIMAL_DIE_ I,동물은 죽어서 가죽을 남긴다 I,"Animal Dies, Leaves Skin I"
+ACHIEVEMENT_NAME_ANIMAL_DIE_ II,동물은 죽어서 가죽을 남긴다 II,"Animal Dies, Leaves Skin II"
+ACHIEVEMENT_NAME_ANIMAL_DIE_ III,동물은 죽어서 가죽을 남긴다 III,"Animal Dies, Leaves Skin III"
+ACHIEVEMENT_NAME_ANIMAL_DIE_ IV,동물은 죽어서 가죽을 남긴다 IV,"Animal Dies, Leaves Skin IV"
+ACHIEVEMENT_NAME_ANIMAL_DIE_ V,동물은 죽어서 가죽을 남긴다 V,"Animal Dies, Leaves Skin V"
+ACHIEVEMENT_NAME_STAR_ I,저 하늘의 별 I,Star of the Sky I
+ACHIEVEMENT_NAME_STAR_ II,저 하늘의 별 II,Star of the Sky II
+ACHIEVEMENT_NAME_STAR_ III,저 하늘의 별 III,Star of the Sky III
+ACHIEVEMENT_NAME_STAR_ IV,저 하늘의 별 IV,Star of the Sky IV
+ACHIEVEMENT_NAME_STAR_ V,저 하늘의 별 V,Star of the Sky V
+ACHIEVEMENT_NAME_ESCAPE_NEWBIE,탈출의 시작,Newbie of Escape
+ACHIEVEMENT_NAME_ESCAPE_GOSU,탈출의 고수,Gosu of Escape
+ACHIEVEMENT_NAME_ESCAPE_LEGEND,탈출의 전설,Legend of Escape
+ACHIEVEMENT_NAME_ESCAPE_MASTER,탈출의 장인,Master of Escape
+ACHIEVEMENT_NAME_ESCAPE_EXPORT,탈출의 달인,Export of Escape
+ACHIEVEMENT_NAME_DYNAMIC_DUO,동물이 2개지요,Two Animals
+ACHIEVEMENT_NAME_FANTASTIC_FOUR,판타스틱 4,Fantastic Four
+ACHIEVEMENT_NAME_LUCKEY_SEVEN,럭키세븐,Luckey Seven
+ACHIEVEMENT_NAME_BARRIER,보이지 않는 벽이 가장 무서운 법,Invisible Walls Are The Scariest
+ACHIEVEMENT_NAME_NO_CREDIT,외상 사절!,No Credit!
+ACHIEVEMENT_NAME_STEINS_GATE,슈타인즈 게이트의 선택,The Choice in Steins;Gate
+ACHIEVEMENT_NAME_ANIMAL_ONE_LIVES,죽은자의 소생,Animal Reborn
+ACHIEVEMENT_NAME_ANIMAL_TWO_LIVES,목숨이 2개 목숨이 2개,Two Lives Two Lives
+ACHIEVEMENT_NAME_ANIMAL_NINE_LIVES,나인 라이브즈,Nine Lives
+ACHIEVEMENT_NAME_BOSS_FIRST_KILL,목표를 센터에 넣고 스위치...,Center Target and Switch...
+ACHIEVEMENT_NAME_BOSS_DOUBLE_KILL,"나노머신이다, 애송이!","Nanomachines, Son!"
+ACHIEVEMENT_NAME_COULD_HEAR,...너 사실 들리는 거지?,"...You Could hear all along, couldn't you?"
+ACHIEVEMENT_NAME_UPGRADE_EASY,강화는 쉬운일,Upgrade is So easy
+ACHIEVEMENT_NAME_PARTNER,"좋아, 가자. 파트너…",Let's go Partner...
+ACHIEVEMENT_NAME_ELPSYCONGROO,엘 프사이 콩그루,El Psy Congroo
+ACHIEVEMENT_DESCRIPTION_ITEMCOLLECTOR_NEWBIE,아이템 100개 수집,Collecting 100 Items
+ACHIEVEMENT_DESCRIPTION_ITEMCOLLECTOR_GOSU,아이템 500개 수집,Collecting 500 Items
+ACHIEVEMENT_DESCRIPTION_ITEMCOLLECTOR_LEGEND,"아이템 1,000개 수집","Collecting 1,000 Items"
+ACHIEVEMENT_DESCRIPTION_ITEMCOLLECTOR_MASTER,"아이템 5,000개 수집","Collecting 5,000 Items"
+ACHIEVEMENT_DESCRIPTION_ITEMCOLLECTOR_EXPORT,"아이템 10,000개 수집","Collecting 10,000 Items"
+ACHIEVEMENT_DESCRIPTION_RECORDHOLDER_NEWBIE,"최고 점수 10,000점 도달","Reach the highest score of 10,000"
+ACHIEVEMENT_DESCRIPTION_RECORDHOLDER_GOSU,"최고 점수 50,000점 도달","Reach the highest score of 50,000"
+ACHIEVEMENT_DESCRIPTION_RECORDHOLDER_LEGEND,"최고 점수 100,000점 도달","Reach the highest score of 100,000"
+ACHIEVEMENT_DESCRIPTION_RECORDHOLDER_MASTER,"최고 점수 500,000점 도달","Reach the highest score of 500,000"
+ACHIEVEMENT_DESCRIPTION_RECORDHOLDER_EXPORT,"최고 점수 1,000,000점 도달","Reach the highest score of 1,000,000"
+ACHIEVEMENT_DESCRIPTION_ANIMAL_DIE_ I,최초 사망,The 1 Death
+ACHIEVEMENT_DESCRIPTION_ANIMAL_DIE_ II,10번 사망,The 10 Death
+ACHIEVEMENT_DESCRIPTION_ANIMAL_DIE_ III,100번 사망,The 100 Death
+ACHIEVEMENT_DESCRIPTION_ANIMAL_DIE_ IV,500번 사망,The 500 Death
+ACHIEVEMENT_DESCRIPTION_ANIMAL_DIE_ V,"1,000번 사망","The 1,000 Death"
+ACHIEVEMENT_DESCRIPTION_STAR_ I,인간 1회 날림,Blew a human away once
+ACHIEVEMENT_DESCRIPTION_STAR_ II,인간 75회 날림,Blew a human away 75 times
+ACHIEVEMENT_DESCRIPTION_STAR_ III,인간 250회 날림,Blew a human away 250 times
+ACHIEVEMENT_DESCRIPTION_STAR_ IV,인간 500회 날림,Blew a human away 500 times
+ACHIEVEMENT_DESCRIPTION_STAR_ V,"인간 1,000회 날림","Blew a human away 1,000 times"
+ACHIEVEMENT_DESCRIPTION_ESCAPE_NEWBIE,게임 누적 플레이 1회,Played the game 1 times
+ACHIEVEMENT_DESCRIPTION_ESCAPE_GOSU,게임 누적 플레이 10회,Played the game 10 times
+ACHIEVEMENT_DESCRIPTION_ESCAPE_LEGEND,게임 누적 플레이 50회,Played the game 50 times
+ACHIEVEMENT_DESCRIPTION_ESCAPE_MASTER,게임 누적 플레이 100회,Played the game 100 times
+ACHIEVEMENT_DESCRIPTION_ESCAPE_EXPORT,"게임 누적 플레이 1,000회","Played the game 1,000 times"
+ACHIEVEMENT_DESCRIPTION_DYNAMIC_DUO,캐릭터 2개 보유,Own 2 Animal
+ACHIEVEMENT_DESCRIPTION_FANTASTIC_FOUR,캐릭터 4개 보유,Own 4 Animal
+ACHIEVEMENT_DESCRIPTION_LUCKEY_SEVEN,캐릭터 7개 보유,Own 7 Animal
+ACHIEVEMENT_DESCRIPTION_BARRIER,보이지 않아~ 아직도 ,Can’t see it… still
+ACHIEVEMENT_DESCRIPTION_NO_CREDIT,코인으로 행동력 1회 구매,Purchased Life with coins once
+ACHIEVEMENT_DESCRIPTION_STEINS_GATE,일시정지를 1회 사용,Used pause once
+ACHIEVEMENT_DESCRIPTION_ANIMAL_ONE_LIVES,부활 1회 사용,Used revive once
+ACHIEVEMENT_DESCRIPTION_ANIMAL_TWO_LIVES,부활 2회 사용,Used revive twice
+ACHIEVEMENT_DESCRIPTION_ANIMAL_NINE_LIVES,부활 9회 사용,Used revive nine times
+ACHIEVEMENT_DESCRIPTION_BOSS_FIRST_KILL,첫번째 보스 처치,Defeated the first boss
+ACHIEVEMENT_DESCRIPTION_BOSS_DOUBLE_KILL,두번째 보스 처치,Defeated the second boss
+ACHIEVEMENT_DESCRIPTION_COULD_HEAR,치지지직…치지직…,Bzzz… bzzz…
+ACHIEVEMENT_DESCRIPTION_UPGRADE_EASY,강해진 기분이군,I feel stronger
+ACHIEVEMENT_DESCRIPTION_PARTNER,AIBO,AIBO
+ACHIEVEMENT_DESCRIPTION_ELPSYCONGROO,부활을 사용하지 않고 게임 클리어,Cleared the game without using a revive
+ANIMAL_NAME_RABBIT,토끼,Rabbit
+ANIMAL_NAME_FOX,여우,Fox
+ANIMAL_NAME_DEER,사슴,Deer
+ANIMAL_NAME_RACCOON,라쿤,Raccoon
+ANIMAL_NAME_WOLF,늑대,Wolf
+ANIMAL_NAME_BOAR,멧돼지,Boar
+ANIMAL_NAME_TIGER,호랑이,Tiger
+ANIMAL_NAME_CHEETAH,치타,Cheetah
+ANIMAL_NAME_MOOSE,무스,Moose
+ANIMAL_NAME_BEAR,곰,Bear
+ANIMAL_MOVESPEED_UP,이동 속도 {0} 증가,Movement speed +{0}
+ANIMAL_ATTACKPOWER_UP,공격력 {0} 증가,Attack power +{0}
+INGAME_ITEMSCORE_UP,아이템 점수 {0} 증가,Item score +{0}
+INGAME_RESULTSCORE_UP,최종 점수 {0}% 증가,Final score +{0}%
+INGAME_COINGAIN_UP,코인 획득량 {0}% 증가,Coin gain +{0}%
+INGAME_SKILL_NAME_FIREBALL,파이어볼 LV.{0},Fireball LV.{0}
+INGAME_SKILL_NAME_METEOR,메테오 LV.{0},Meteor LV.{0}
+INGAME_SKILL_NAME_BLIZZARD,블리자드 LV.{0},Blizzard LV.{0}
+INGAME_SKILL_NAME_ICESHOT,아이스 샷 LV.{0},Ice Shot LV.{0}
+INGAME_SKILL_NAME_LIGHTNINGSHOCK,라이트닝 쇼크 LV.{0},Lightning Shock LV.{0}
+INGAME_SKILL_NAME_LIGHTNINGORB,라이트닝 오브 LV.{0},Lightning Orb LV.{0}
+INGAME_SKILL_NAME_EXPGAIN_UP,경험치 획득량 LV.{0},EXP Gain Up LV.{0}
+INGAME_SKILL_NAME_SKILLDMG_UP,스킬대미지 증가 LV.{0},Skill Damage Up LV.{0}
+INGAME_SKILL_NAME_COOLTIME_UP,쿨타임 감소 LV.{0},Cooldown Reduction LV.{0}
+INGAME_SKILL_NAME_FIREDMG_UP,불 속성 대미지 증가 LV.{0},Fire Damage Up LV.{0}
+INGAME_SKILL_NAME_ICEDMG_UP,얼음 속성 대미지 증가 LV.{0},Ice Damage Up LV.{0}
+INGAME_SKILL_NAME_LIGHTNINGDMG_UP,번개 속성 대미지 증가 LV.{0},Lightning Damage Up LV.{0}
+INGAME_SKILL_DESCRIPTION_FIREBALL_ I,1회 공격하는 화염 구체를 1개 발사하여 대미지를 입힌다. 공격 당한 적은 화상 피해를 입는다.,Fires 1 Fireball that deals damage. The enemy hit takes burn damage.
+INGAME_SKILL_DESCRIPTION_FIREBALL_II,대미지 20% 증가 구체 1개 증가,"Plus 20% Damage, Plus 1 Ball"
+INGAME_SKILL_DESCRIPTION_FIREBALL_III,대미지 40% 증가 공격 횟수 1 증가 구체 1개 증가,"Plus 40% Damage, Plus 1 Attack Count, Plus 1 Ball"
+INGAME_SKILL_DESCRIPTION_METEOR_I,1회 공격하는 화염 운석을 떨어트린다. 공격 당한 적은 화상 피해를 입는다.,Drops a single flame meteor that deals damage. The enemy hit takes burn damage.
+INGAME_SKILL_DESCRIPTION_METEOR_II,대미지 50% 증가,Plus 50% Damage
+INGAME_SKILL_DESCRIPTION_METEOR_III,공격 횟수 1 증가,Plus 1 Attack Count
+INGAME_SKILL_DESCRIPTION_BLIZZARD_I,하늘에서 15회 공격하는 얼음 창을 떨어트린다. 공격 당한 적은 냉기 효과를 입는다.,Summons 15 ice spears from the sky to attack. The enemy hit is inflicted with a chilling effect.
+INGAME_SKILL_DESCRIPTION_BLIZZARD_II,대미지 2% 증가,Plus 2% damage
+INGAME_SKILL_DESCRIPTION_BLIZZARD_III,대미지 2% 증가 공격 횟수 1 증가,"Plus 2% damage, Plus 1 Attack Count"
+INGAME_SKILL_DESCRIPTION_ICESHOT_I,1회 공격하는 얼음 창을 3개 발사한다. 공격 당한 적은 냉기 효과를 입는다.,Fires 3 ice spears that attack once. The enemy hit is inflicted with a chilling effect.
+INGAME_SKILL_DESCRIPTION_ICESHOT_II,얼음 창 1개 증가,Plus 1 ice spears
+INGAME_SKILL_DESCRIPTION_ICESHOT_III,얼음 창 1개 증가 공격 횟수 1 증가,"Plus 1 ice spears, Plus 1 Attack Count"
+INGAME_SKILL_DESCRIPTION_LIGHTNINGSHOCK_I,"1회 공격하는 고압 전류를 2개 발사한다. 공격 당한 적은 번개 스택이 쌓이고, 6스택 달성 시 천벌 스킬이 발동한다.","Fires 2 high-voltage currents. The enemy gains lightning stacks, and upon reaching 6 stacks, Judgment is activated."
+INGAME_SKILL_DESCRIPTION_LIGHTNINGSHOCK_II,투사체 2개 증가,Plus 2 projectiles
+INGAME_SKILL_DESCRIPTION_LIGHTNINGORB_I,"3회 공격하는 번개 구체를 발사한다. 공격 당한 적은 번개 스택이 쌓이고, 6스택 달성 시 천벌 스킬이 발동한다.","Fires a lightning orb that attacks 3 times. The enemy gains lightning stacks, and at 6 stacks, Judgment is activated."
+INGAME_SKILL_DESCRIPTION_LIGHTNINGORB_II,대미지 10% 증가,Plus 10% damage
+INGAME_SKILL_DESCRIPTION_LIGHTNINGORB_III,대미지 40% 증가 공격 횟수 2 증가,"Plus 40% damage, Plus 2 Attack Count"
+INGAME_SKILL_DESCRIPTION_EXPGAIN_UP,경험치 획득량 {0}% 증가,EXP gain +{0}%
+INGAME_SKILL_DESCRIPTION_SKILLDMG_UP,스킬 대미지 {0}% 증가,Skill damage +{0}%
+INGAME_SKILL_DESCRIPTION_COLLTIME_UP,쿨타임 {0}% 감소,Cooltime -{0}%
+INGAME_SKILL_DESCRIPTION_FIREDMG_UP,불 속성 대미지 {0}% 증가,Fire damage +{0}%
+INGAME_SKILL_DESCRIPTION_ICEDMG_UP,얼음 속성 대미지 {0}% 증가,Ice damage +{0}%
+INGAME_SKILL_DESCRIPTION_LIGHTNINGDMG_UP,번개 속성 대미지 {0}% 증가,Lightning damage +{0}%
+INGAME_SKILL_SELECTE,스킬 선택,Select Skill
+INGAME_SKILL_REFRESH,새로고침,Refresh
+INGAME_ANIMAL_REBORN,부활,Revive
+OUTGAME_MISSION_COMPLETE,달성완료,Achievement Complete
+OUTGAME_CLAIM_REWARD,보상수령,Claim Reward
+OUTGAME_GACHA_TYPE_I,1회,Once
+OUTGAME_GACHA_TYPE_II,10회,10 Times
+OUTGAME_GACHA_BUY,구매하기,Purchase
+OUTGAME_ATTACKPOWER,공격력,Attack
+OUTGAME_LEVEL,레벨,Level
+OUTGAME_SKILL,스킬,Skill
+OUTGAME_ENDOWMENT_EFFECT,보유 효과,Endowment Effect
+OUTGAME_UPGRADE,강화하기,Upgrade
+OUTGAME_NOMALBOX,일반 상자,Normal Box
+OUTGAME_ROYALBOX,고급 상자,Royal Box
+OUTGAME_LIVES,행동력,Life
+OUTGAME_TICKET_PROCESS,{0}개 열쇠를 사용하여 진행하시겠습니까?,Use {0} Ticket to proceed?
+OUTGAME_TICKET_BUY,{0}개의 열쇠가 부족합니다. {0}개 골드을 사용해 열쇠를 구매하시겠습니까?,Not enough keys. Would you like to use {0} coins to buy keys?
+OUTGAME_CONFIRM,확인,Confirm
+OUTGAME_CANCEL,취소,Cancel
+OUTGAME_NO_MONEY,골드가 부족합니다.,Not enough Gold
+OUTGAME_UPGRADE_COMPLETE,강화 성공,Upgrade Successful
+OUTGAME_UPGRADE_PROCESS,{Name} 토큰 {0}개와 골드{0}개를 사용하여 강화를 진행하시겠습니까?,Use {0} {Name} Tokens and {0} Gold to Upgrade?
+OUTGAME_ROBBY,로비,Lobby
+OUTGAME_ANIMAL,동물,Animals
+OUTGAME_SHOP,상점,Shop
+OUTGAME_ESCAPE,탈출,Escape
+OUTGAME_YES,네,Yes
+OUTGAME_NO,아니요,No
+OUTGAME_GACHA_FREE,일일 무료,Daily Free
+OUTGAME_GACHA_ADS_ON,광고 1 / 1,Ad 1 / 1
+OUTGAME_GACHA_ADS_NO,광고 0 / 1,Ad 0 / 1
+OUTGAME_NOTICE,알림,Notification
+OUTGAME_TOUCH_BOX,상자를 터치하세요!,Tap the Box!
+OUTGAME_CHANGE,변환 개수,Change Count
+OUTGAME_SKIP,스킵 ▶Ⅰ,Skip ▶Ⅰ
+OUTGAME_GAIN,획득,Gain
+OUTGAME_PRESS_SCREEN,화면을 터치해 완료하세요.,Tap the screen to complete.
+OUTGAME_BUY,구매하시겠습니까?,Do you want to buying it?
+OUTGAME_END,정말 게임을 종료하시겠습니까?,Are you sure you want to quit the game?
+OUTGAME_PLAYER_LEVEL_GOAL,레벨{0} 달성,Reach Level {0}
+OUTGAME_PLAYER_INFO,계정 정보,Player Info
+OUTGAME_PLAYER_LEVELUP,레벨 업!,Level Up!
+170619,스킬 데미지 N% 증가,
+170620,쿨타임 N% 감소,
+170621,불 속성 데미지 N% 증가,
+170622,얼음 속성 데미지 N% 증가,
+170623,번개 속성 데미지 N% 증가,
+170701,스킬 선택,
+170702,새로고침,
+170703,부활,
+170801,달성완료,
+170802,보상수령,
+170803,1회,
+170804,10회,
+170805,구매하기,
+170806,공격력,
+170807,레벨,
+170808,스킬,
+170809,보유 효과,
+170810,강화하기,
+170811,일반 상자,
+170812,고급 상자,
+170813,행동력,
+170814,{0}개 열쇠를 사용하여 진행하시겠습니까?,
+170815,{0}개의 열쇠가 부족합니다. {0}개 코인을 사용해 열쇠를 구매하시겠습니까?,
+170816,확인,
+170817,취소,
+170818,코인이 부족합니다.,
+170819,강화 성공,
+170820,{Name} 토큰 {0}개와 코인{0}개를 사용하여 강화를 진행하시겠습니까?,
+170821,로비,
+170822,동물,
+170823,상점,
+170824,탈출,
+170825,네,
+170826,아니요,
+170827,일일 무료,
+170828,광고 1 / 1,
+170829,광고 0 / 1,
+170830,알림,
+170831,상자를 터치하세요!,
+170832,변환 개수,
+170833,스킵 ▶Ⅰ,
+170834,획득,
+170835,화면을 터치해 완료하세요.,
+170836,구매하시겠습니까?,
+170837,정말 게임을 종료하시겠습니까?,
+170838,레벨{0} 달성,
+170839,계정 정보,
+170840,레벨 업!,

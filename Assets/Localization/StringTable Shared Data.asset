@@ -335,48 +335,68 @@ MonoBehaviour:
     m_Key: ACHIEVEMENT_DESCRIPTION_ELPSYCONGROO
     m_Metadata:
       m_Items: []
+  - m_Id: 1824254961115136
+    m_Key: ANIMAL_NAME_DOG
+    m_Metadata:
+      m_Items: []
   - m_Id: 187694047283
     m_Key: ANIMAL_NAME_RABBIT
-    m_Metadata:
-      m_Items: []
-  - m_Id: 187694047284
-    m_Key: ANIMAL_NAME_FOX
-    m_Metadata:
-      m_Items: []
-  - m_Id: 187694047285
-    m_Key: ANIMAL_NAME_DEER
     m_Metadata:
       m_Items: []
   - m_Id: 187694047286
     m_Key: ANIMAL_NAME_RACCOON
     m_Metadata:
       m_Items: []
-  - m_Id: 187694047287
-    m_Key: ANIMAL_NAME_WOLF
+  - m_Id: 1824254965309440
+    m_Key: ANIMAL_NAME_SQUIRREL
     m_Metadata:
       m_Items: []
-  - m_Id: 187694047288
-    m_Key: ANIMAL_NAME_BOAR
+  - m_Id: 1824254965309441
+    m_Key: ANIMAL_NAME_MONKEY
     m_Metadata:
       m_Items: []
-  - m_Id: 187694047289
-    m_Key: ANIMAL_NAME_TIGER
+  - m_Id: 1824254965309442
+    m_Key: ANIMAL_NAME_REINDEER
     m_Metadata:
       m_Items: []
-  - m_Id: 187694047290
-    m_Key: ANIMAL_NAME_CHEETAH
+  - m_Id: 1824254965309443
+    m_Key: ANIMAL_NAME_REDPANDA
     m_Metadata:
       m_Items: []
-  - m_Id: 187694047291
-    m_Key: ANIMAL_NAME_MOOSE
+  - m_Id: 1824254965309444
+    m_Key: ANIMAL_NAME_CAT
     m_Metadata:
       m_Items: []
-  - m_Id: 187694047292
-    m_Key: ANIMAL_NAME_BEAR
+  - m_Id: 1824254965309445
+    m_Key: ANIMAL_NAME_HORSE
     m_Metadata:
       m_Items: []
-  - m_Id: 187694047293
-    m_Key: ANIMAL_MOVESPEED_UP
+  - m_Id: 187694047285
+    m_Key: ANIMAL_NAME_DEER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 187694047284
+    m_Key: ANIMAL_NAME_FOX
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254965309446
+    m_Key: ANIMAL_NAME_GOLILLA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254965309447
+    m_Key: ANIMAL_NAME_ELEPHANT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254965309448
+    m_Key: ANIMAL_NAME_Rhinoceros
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254965309449
+    m_Key: ANIMAL_NAME_BUFFALO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254965309450
+    m_Key: ANIMAL_SKILLDAMAGE_UP
     m_Metadata:
       m_Items: []
   - m_Id: 187694047294
@@ -707,196 +727,56 @@ MonoBehaviour:
     m_Key: OUTGAME_PLAYER_LEVELUP
     m_Metadata:
       m_Items: []
-  - m_Id: 1436850427133952
-    m_Key: 170619
+  - m_Id: 1824254969503744
+    m_Key: OUTGAME_GAIN_ITEM
     m_Metadata:
       m_Items: []
-  - m_Id: 1436850427133953
-    m_Key: 170620
+  - m_Id: 1824254969503745
+    m_Key: INGAME_GAINS_CORE
     m_Metadata:
       m_Items: []
-  - m_Id: 1436850427133954
-    m_Key: 170621
+  - m_Id: 1824254969503746
+    m_Key: INGAME_GAIN_EXP
     m_Metadata:
       m_Items: []
-  - m_Id: 1436850427133955
-    m_Key: 170622
+  - m_Id: 1824254969503747
+    m_Key: INGAME_GAIN_COIN
     m_Metadata:
       m_Items: []
-  - m_Id: 1436850427133956
-    m_Key: 170623
+  - m_Id: 1824254969503748
+    m_Key: INGAME_PALYTIMES
     m_Metadata:
       m_Items: []
-  - m_Id: 1436850427133957
-    m_Key: 170701
+  - m_Id: 1824254969503749
+    m_Key: INGAME_REMAKE
     m_Metadata:
       m_Items: []
-  - m_Id: 1436850427133958
-    m_Key: 170702
+  - m_Id: 1824254969503750
+    m_Key: INGAME_MOVEROBBY
     m_Metadata:
       m_Items: []
-  - m_Id: 1436850427133959
-    m_Key: 170703
+  - m_Id: 1824254969503751
+    m_Key: INGAME_PAUSE
     m_Metadata:
       m_Items: []
-  - m_Id: 1436850427133960
-    m_Key: 170801
+  - m_Id: 1824254969503752
+    m_Key: INGAME_CONTINUE
     m_Metadata:
       m_Items: []
-  - m_Id: 1436850427133961
-    m_Key: 170802
+  - m_Id: 1824254969503753
+    m_Key: INGAME_QUIT
     m_Metadata:
       m_Items: []
-  - m_Id: 1436850427133962
-    m_Key: 170803
+  - m_Id: 1824254969503754
+    m_Key: INGAME_OPTIONSETTING
     m_Metadata:
       m_Items: []
-  - m_Id: 1436850427133963
-    m_Key: 170804
+  - m_Id: 1824254969503755
+    m_Key: INGAME_REALLYGIVEUP
     m_Metadata:
       m_Items: []
-  - m_Id: 1436850427133964
-    m_Key: 170805
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850427133965
-    m_Key: 170806
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850427133966
-    m_Key: 170807
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850427133967
-    m_Key: 170808
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850427133968
-    m_Key: 170809
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850427133969
-    m_Key: 170810
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850427133970
-    m_Key: 170811
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850427133971
-    m_Key: 170812
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850427133972
-    m_Key: 170813
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328256
-    m_Key: 170814
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328257
-    m_Key: 170815
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328258
-    m_Key: 170816
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328259
-    m_Key: 170817
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328260
-    m_Key: 170818
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328261
-    m_Key: 170819
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328262
-    m_Key: 170820
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328263
-    m_Key: 170821
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328264
-    m_Key: 170822
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328265
-    m_Key: 170823
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328266
-    m_Key: 170824
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328267
-    m_Key: 170825
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328268
-    m_Key: 170826
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328269
-    m_Key: 170827
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328270
-    m_Key: 170828
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328271
-    m_Key: 170829
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328272
-    m_Key: 170830
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328273
-    m_Key: 170831
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328274
-    m_Key: 170832
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328275
-    m_Key: 170833
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328276
-    m_Key: 170834
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328277
-    m_Key: 170835
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328278
-    m_Key: 170836
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328279
-    m_Key: 170837
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328280
-    m_Key: 170838
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328281
-    m_Key: 170839
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1436850431328282
-    m_Key: 170840
+  - m_Id: 1824254969503756
+    m_Key: INGAME_RESULT
     m_Metadata:
       m_Items: []
   m_Metadata:

@@ -35,7 +35,7 @@ public class GageBar : MonoBehaviour
 
     public void OnValueChange(float value)
     {
-        SetColor();
+        //  SetColor();
     }
 
     public void SetMaxValue(int max)

@@ -271,7 +271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8714317161665136642, guid: 73a4ddf153933474fb9581b84f1676c7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 8714317161665136642, guid: 73a4ddf153933474fb9581b84f1676c7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -596,15 +596,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3612961042289590281, guid: 0fa21128b356e49ee80816950e62f0b9, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3612961042289590281, guid: 0fa21128b356e49ee80816950e62f0b9, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 0.95089287
       objectReference: {fileID: 0}
     - target: {fileID: 3612961042289590281, guid: 0fa21128b356e49ee80816950e62f0b9, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.03794643
       objectReference: {fileID: 0}
     - target: {fileID: 3841398152097245727, guid: 0fa21128b356e49ee80816950e62f0b9, type: 3}
       propertyPath: trackingTime
@@ -676,15 +676,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9154763438929502054, guid: 0fa21128b356e49ee80816950e62f0b9, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9154763438929502054, guid: 0fa21128b356e49ee80816950e62f0b9, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 0.95089287
       objectReference: {fileID: 0}
     - target: {fileID: 9154763438929502054, guid: 0fa21128b356e49ee80816950e62f0b9, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.03794643
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -937,7 +937,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2068,7 +2068,7 @@ MonoBehaviour:
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
-    ModeOverride: 0
+    ModeOverride: 2
     LensShift: {x: 0, y: 0}
     GateFit: 2
     FocusDistance: 10
@@ -2124,6 +2124,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1856651016}
   - component: {fileID: 1856651015}
+  - component: {fileID: 1856651017}
   - component: {fileID: 1856651014}
   - component: {fileID: 1856651013}
   m_Layer: 0
@@ -2241,6 +2242,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1856651017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856651012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27fec5cae7b257341a91ca046321b6eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matrixType: 0
+  fieldOfView: 60
+  size: 10
+  nearClipPlaneSameAsCamera: 1
+  nearClipPlane: 0.1
+  drawGizmos: 0
 --- !u!1 &1885620131 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5626234425246636654, guid: 2160d3f4ae9d74343b9511880802e9d5, type: 3}
@@ -2576,6 +2595,14 @@ PrefabInstance:
       propertyPath: curvedWorldController
       value: 
       objectReference: {fileID: 571322620}
+    - target: {fileID: 2608582804667110710, guid: 505857f046945c54f82d855818786aba, type: 3}
+      propertyPath: maxHorizonCurvatureValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2608582804667110710, guid: 505857f046945c54f82d855818786aba, type: 3}
+      propertyPath: maxVirticalCurvatureValue
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4160796323777910873, guid: 505857f046945c54f82d855818786aba, type: 3}
       propertyPath: m_Name
       value: RoadManager

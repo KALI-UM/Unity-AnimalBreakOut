@@ -47,7 +47,7 @@ public static class LocalizationUtility
 
     private static IEnumerator LocaleChange(string targetLocal)
     {
-        if (coLocaleChange!=null||CurrentLocale == targetLocal)
+        if (coLocaleChange != null || CurrentLocale == targetLocal)
             yield break;
 
         int index = GetAvaliableLocaleIndex(targetLocal);
@@ -95,4 +95,18 @@ public static class LocalizationUtility
             return lzString.TableEntryReference;
         }
     }
+    public static void ChangeLocaleNow(string localeName)
+    {
+        foreach (var locale in LocalizationSettings.AvailableLocales.Locales)
+        {
+            if (locale.LocaleName == localeName)
+            {
+                LocalizationSettings.SelectedLocale = locale;
+                Debug.Log($"Changed Language to: {localeName}");
+                return;
+            }
+        }
+        Debug.LogWarning($"Locale '{localeName}' not found!");
+    }
+
 }

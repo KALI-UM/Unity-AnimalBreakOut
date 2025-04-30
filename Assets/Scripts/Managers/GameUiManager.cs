@@ -31,11 +31,13 @@ public class GameUIManager : InGameManager
     [SerializeField] public BossDebuffUIController bossDebuffUI;
     [SerializeField] public SupportSlotUI supportSlotUI;
     [SerializeField] public AttackSlotUI attackSlotUI;
-
-
-
-
-
+    [SerializeField] private Button koreanButton; // 임시 한글 설정 버튼
+    [SerializeField] private Button englishButton; //임시 영어 설정 버튼
+    private void Start() // 임시 한글 영어 설정 버튼
+    {
+        koreanButton.onClick.AddListener(() => LocalizationUtility.ChangeLocaleNow("Korean (South Korea) (ko-KR)"));
+        englishButton.onClick.AddListener(() => LocalizationUtility.ChangeLocaleNow("English (United States) (en-US)"));
+    }
 
     public override void Initialize()
     {

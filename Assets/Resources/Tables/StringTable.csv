@@ -79,17 +79,22 @@ ACHIEVEMENT_DESCRIPTION_COULD_HEAR,치지지직…치지직…,Bzzz… bzzz…
 ACHIEVEMENT_DESCRIPTION_UPGRADE_EASY,강해진 기분이군,I feel stronger
 ACHIEVEMENT_DESCRIPTION_PARTNER,AIBO,AIBO
 ACHIEVEMENT_DESCRIPTION_ELPSYCONGROO,부활을 사용하지 않고 게임 클리어,Cleared the game without using a revive
+ANIMAL_NAME_DOG,개,Dog
 ANIMAL_NAME_RABBIT,토끼,Rabbit
-ANIMAL_NAME_FOX,여우,Fox
+ANIMAL_NAME_RACCOON,너구리,Raccoon
+ANIMAL_NAME_SQUIRREL,다람쥐,Squrrel
+ANIMAL_NAME_MONKEY,원숭이,Monkey
+ANIMAL_NAME_REINDEER,순록,ReinDeer
+ANIMAL_NAME_REDPANDA,레서판다,Red Panda
+ANIMAL_NAME_CAT,고양이,Cat
+ANIMAL_NAME_HORSE,말,Horse
 ANIMAL_NAME_DEER,사슴,Deer
-ANIMAL_NAME_RACCOON,라쿤,Raccoon
-ANIMAL_NAME_WOLF,늑대,Wolf
-ANIMAL_NAME_BOAR,멧돼지,Boar
-ANIMAL_NAME_TIGER,호랑이,Tiger
-ANIMAL_NAME_CHEETAH,치타,Cheetah
-ANIMAL_NAME_MOOSE,무스,Moose
-ANIMAL_NAME_BEAR,곰,Bear
-ANIMAL_MOVESPEED_UP,이동 속도 {0} 증가,Movement speed +{0}
+ANIMAL_NAME_FOX,여우,FOX
+ANIMAL_NAME_GOLILLA,고릴라,Gorilla
+ANIMAL_NAME_ELEPHANT,코끼리,Elephant
+ANIMAL_NAME_Rhinoceros,코뿔소,Rhinoceros
+ANIMAL_NAME_BUFFALO,물소,Buffalo
+ANIMAL_SKILLDAMAGE_UP,스킬 대미지 {0}% 증가,Skill Damage +{0}%
 ANIMAL_ATTACKPOWER_UP,공격력 {0} 증가,Attack power +{0}
 INGAME_ITEMSCORE_UP,아이템 점수 {0} 증가,Item score +{0}
 INGAME_RESULTSCORE_UP,최종 점수 {0}% 증가,Final score +{0}%
@@ -172,51 +177,16 @@ OUTGAME_END,정말 게임을 종료하시겠습니까?,Are you sure you want to 
 OUTGAME_PLAYER_LEVEL_GOAL,레벨{0} 달성,Reach Level {0}
 OUTGAME_PLAYER_INFO,계정 정보,Player Info
 OUTGAME_PLAYER_LEVELUP,레벨 업!,Level Up!
-170619,스킬 데미지 N% 증가,
-170620,쿨타임 N% 감소,
-170621,불 속성 데미지 N% 증가,
-170622,얼음 속성 데미지 N% 증가,
-170623,번개 속성 데미지 N% 증가,
-170701,스킬 선택,
-170702,새로고침,
-170703,부활,
-170801,달성완료,
-170802,보상수령,
-170803,1회,
-170804,10회,
-170805,구매하기,
-170806,공격력,
-170807,레벨,
-170808,스킬,
-170809,보유 효과,
-170810,강화하기,
-170811,일반 상자,
-170812,고급 상자,
-170813,행동력,
-170814,{0}개 열쇠를 사용하여 진행하시겠습니까?,
-170815,{0}개의 열쇠가 부족합니다. {0}개 코인을 사용해 열쇠를 구매하시겠습니까?,
-170816,확인,
-170817,취소,
-170818,코인이 부족합니다.,
-170819,강화 성공,
-170820,{Name} 토큰 {0}개와 코인{0}개를 사용하여 강화를 진행하시겠습니까?,
-170821,로비,
-170822,동물,
-170823,상점,
-170824,탈출,
-170825,네,
-170826,아니요,
-170827,일일 무료,
-170828,광고 1 / 1,
-170829,광고 0 / 1,
-170830,알림,
-170831,상자를 터치하세요!,
-170832,변환 개수,
-170833,스킵 ▶Ⅰ,
-170834,획득,
-170835,화면을 터치해 완료하세요.,
-170836,구매하시겠습니까?,
-170837,정말 게임을 종료하시겠습니까?,
-170838,레벨{0} 달성,
-170839,계정 정보,
-170840,레벨 업!,
+OUTGAME_GAIN_ITEM,아이템 획득,Gain Item
+INGAME_GAINS_CORE,획득 점수,Score
+INGAME_GAIN_EXP,획득 경험치,EXP
+INGAME_GAIN_COIN,획득 코인,Coin
+INGAME_PALYTIMES,플레이 타임,Playtimes
+INGAME_REMAKE,다시하기,Remake
+INGAME_MOVEROBBY,메인화면 ,MainRobby
+INGAME_PAUSE,일시정지,Pause
+INGAME_CONTINUE,계속하기,Continue
+INGAME_QUIT,포기하기,Quit
+INGAME_OPTIONSETTING,옵션설정,Option
+INGAME_REALLYGIVEUP,정말로 포기하시겠습니까?,Are you sure you want to quit?
+INGAME_RESULT,게임 결과,Result

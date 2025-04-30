@@ -344,7 +344,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 187694047284
-    m_Localized: Fox
+    m_Localized: FOX
     m_Metadata:
       m_Items: []
   - m_Id: 187694047285
@@ -353,34 +353,6 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 187694047286
     m_Localized: Raccoon
-    m_Metadata:
-      m_Items: []
-  - m_Id: 187694047287
-    m_Localized: Wolf
-    m_Metadata:
-      m_Items: []
-  - m_Id: 187694047288
-    m_Localized: Boar
-    m_Metadata:
-      m_Items: []
-  - m_Id: 187694047289
-    m_Localized: Tiger
-    m_Metadata:
-      m_Items: []
-  - m_Id: 187694047290
-    m_Localized: Cheetah
-    m_Metadata:
-      m_Items: []
-  - m_Id: 187694047291
-    m_Localized: Moose
-    m_Metadata:
-      m_Items: []
-  - m_Id: 187694047292
-    m_Localized: Bear
-    m_Metadata:
-      m_Items: []
-  - m_Id: 187694047293
-    m_Localized: Movement speed +{0}
     m_Metadata:
       m_Items: []
   - m_Id: 187694047294
@@ -715,6 +687,106 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 1436850422939650
     m_Localized: Plus 1 ice spears, Plus 1 Attack Count
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254961115136
+    m_Localized: Dog
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254965309440
+    m_Localized: Squrrel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254965309441
+    m_Localized: Monkey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254965309442
+    m_Localized: ReinDeer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254965309443
+    m_Localized: Red Panda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254965309444
+    m_Localized: Cat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254965309445
+    m_Localized: Horse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254965309446
+    m_Localized: Gorilla
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254965309447
+    m_Localized: Elephant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254965309448
+    m_Localized: Rhinoceros
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254965309449
+    m_Localized: Buffalo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254965309450
+    m_Localized: Skill Damage +{0}%
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254969503744
+    m_Localized: Gain Item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254969503745
+    m_Localized: Score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254969503746
+    m_Localized: EXP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254969503747
+    m_Localized: Coin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254969503748
+    m_Localized: Playtimes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254969503749
+    m_Localized: Remake
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254969503750
+    m_Localized: MainRobby
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254969503751
+    m_Localized: Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254969503752
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254969503753
+    m_Localized: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254969503754
+    m_Localized: Option
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254969503755
+    m_Localized: Are you sure you want to quit?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1824254969503756
+    m_Localized: Result
     m_Metadata:
       m_Items: []
   references:

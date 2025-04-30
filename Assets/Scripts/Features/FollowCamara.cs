@@ -12,11 +12,11 @@ public class FollowCamara : MonoBehaviour
     public LayerMask ignoreLayers;
     private CinemachineVirtualCamera followCamera;
 
-    private void Awake()
+
+    private void Start()
     {
         followCamera = GetComponent<CinemachineVirtualCamera>();
     }
-
     private void LateUpdate()
     {
         RaycastHit[] hits = Physics.RaycastAll(transform.position, target.transform.position, rayLength, ignoreLayers.value);

@@ -7,6 +7,9 @@ public class CurvedWorld : MonoBehaviour
     //public float curvature;
     //public float trimming;
 
+    public float maxHorizonCurvatureValue;
+    public float maxVirticalCurvatureValue;
+
     public AmazingAssets.CurvedWorld.CurvedWorldController curvedWorldController;
 
     private void Awake()
@@ -14,6 +17,8 @@ public class CurvedWorld : MonoBehaviour
         //Shader.SetGlobalFloat("_Curvature", 0);
         //Shader.SetGlobalFloat("_Trimming", 0);
     }
+
+
 
     private void Start()
     {
@@ -28,8 +33,8 @@ public class CurvedWorld : MonoBehaviour
     [ContextMenu("Update Shader Value")]
     public void UpdateShaderValue()
     {
-        curvedWorldController.SetBendHorizontalSize(Mathf.Sin(Time.time) *5f);
-        //curvedWorldController.SetBendVerticalSize(Mathf.Sin(Time.time));
+        curvedWorldController.SetBendHorizontalSize(Mathf.Sin(Time.time/5f) * maxHorizonCurvatureValue);
+        //curvedWorldController.SetBendVerticalSize(Mathf.Sin(Time.time/5f)*maxVirticalCurvatureValue);
     }
 
     //[ContextMenu("X+")]
