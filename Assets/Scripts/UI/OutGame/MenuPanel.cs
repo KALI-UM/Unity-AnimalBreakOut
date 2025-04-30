@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class MenuPanel : MonoBehaviour
 {
-    public static event Action<SwitchableCanvasType> onMenuBottomButtonClicked;
+    public static Action<SwitchableCanvasType> onMenuBottomButtonClicked;
     
     [SerializeField] private Button shopBottomButton;
     [SerializeField] private Button lobbyBottomButton;

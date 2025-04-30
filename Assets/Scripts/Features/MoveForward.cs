@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class MoveForward : MonoBehaviour
@@ -54,5 +51,12 @@ public class MoveForward : MonoBehaviour
     {
         direction = transform.forward.normalized;
         Debug.Log($"[MoveForward] 이동 방향을 회전값 기준으로 설정: {direction}");
+    }
+
+    public void AddSpeed(float value)
+    { 
+        speed += value;
+
+        speed = Mathf.Clamp(speed, 5f, 12f);
     }
 }

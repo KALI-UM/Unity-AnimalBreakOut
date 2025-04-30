@@ -260,6 +260,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LobbyText
       objectReference: {fileID: 0}
+    - target: {fileID: 2020868353799283633, guid: 914c7b42530cf5f418f595899814c8ce, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2737681392353568183, guid: 914c7b42530cf5f418f595899814c8ce, type: 3}
       propertyPath: m_RaycastTarget
       value: 0

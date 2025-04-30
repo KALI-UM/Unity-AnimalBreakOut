@@ -50,6 +50,8 @@ public class OutGameManager : MonoBehaviour
             {
                 outGameUIManager.SwitchVisualizeSwitchableCanvas(SwitchableCanvasType.Lobby, true);
                 outGameUIManager.SwitchActiveSwitchableCanvas(SwitchableCanvasType.Lobby);
+                
+                MenuPanel.onMenuBottomButtonClicked?.Invoke(SwitchableCanvasType.Lobby);
             }
         }
     }
