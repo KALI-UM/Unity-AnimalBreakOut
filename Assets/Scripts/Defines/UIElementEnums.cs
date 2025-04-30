@@ -7,6 +7,8 @@ public enum UIElementEnums
 	SkillIconList,
 	DebuffIconArea,
 	SkillSelectionPanel,
+	SupportSkillSlot,
+	AttackSkillSlot,
 	Panel,
 	PausePanel,
 	GameResultPanel ,
