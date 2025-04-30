@@ -43,6 +43,28 @@ public class OutGameUIManagerEditor : Editor
         {
             InvokeVisualizeCanvasInEditor();
         }
+
+        EditorGUILayout.Space(10);
+        EditorGUILayout.LabelField("Alert Panel 테스트", EditorStyles.boldLabel);
+
+        OutGameUIManager manager = (OutGameUIManager)target;
+
+        GUI.enabled = Application.isPlaying;
+
+        if (GUILayout.Button("Show Alert Single Button Panel"))
+        {
+            manager.ShowAlertSingleButtonPanel();
+        }
+        if (GUILayout.Button("Show Alert Double Button Panel"))
+        {
+            manager.ShowAlertDoubleButtonPanel();
+        }
+        if (GUILayout.Button("Hide Alert Panel Spawn Panel Root"))
+        {
+            manager.HideAlertPanelSpawnPanelRoot();
+        }
+
+        GUI.enabled = true;
     }
     
     private void InvokeVisualizeCanvasInEditor()

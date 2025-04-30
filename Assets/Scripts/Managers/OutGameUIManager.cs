@@ -20,11 +20,33 @@ public class OutGameUIManager : MonoBehaviour, IManager
 
     public SwitchableCanvasType CurrentSwitchableCanvasType { get; set; }
 
+    [SerializeField] private GameObject alertPanelSpawnPanelRoot;
+    [SerializeField] private GameObject alertPanelSpawnPanel;
+    
+    [SerializeField] private GameObject alertSingleButtonPanel;
+    [SerializeField] private GameObject alertDoubleButtonPanel;
+    private ObjectPool<GameObject> alertSingleButtonPanelPool;
+    private ObjectPool<GameObject> alertDoubleButtonPanelPool;
+    [SerializeField] private GameObject alertPanelReleaseParent;
+    
+    private readonly List<GameObject> alertSingleButtonPanelList = new();
+    private readonly List<GameObject> alertDoubleButtonPanelList = new();
+
     private void Start()
     {
         StartCoroutine(DisableAfterFrameAllLayoutGroup(SwitchableCanvasType.Lobby));
 
         CurrentSwitchableCanvasType = SwitchableCanvasType.Lobby;
+        
+        alertSingleButtonPanelPool = outGameManager.ObjectPoolManager.CreateObjectPool(alertSingleButtonPanel,
+            () => Instantiate(alertSingleButtonPanel),
+            obj => { obj.SetActive(true); },
+            obj => { obj.SetActive(false); });
+        
+        alertDoubleButtonPanelPool = outGameManager.ObjectPoolManager.CreateObjectPool(alertDoubleButtonPanel,
+            () => Instantiate(alertDoubleButtonPanel),
+            obj => { obj.SetActive(true); },
+            obj => { obj.SetActive(false); });
         
         // TempCode //
         
@@ -113,5 +135,47 @@ public class OutGameUIManager : MonoBehaviour, IManager
     public void SetOutGameManager(OutGameManager outGameManager)
     {
         this.outGameManager = outGameManager;
+    }
+
+    public void ShowAlertSingleButtonPanel()
+    {
+        alertPanelSpawnPanelRoot.SetActive(true);
+
+        var alertPanel = alertSingleButtonPanelPool.Get();
+        alertPanel.transform.SetParent(alertPanelSpawnPanel.transform);
+        alertPanel.transform.localPosition = Vector3.zero;
+        
+        alertSingleButtonPanelList.Add(alertPanel);
+    }
+    
+    public void ShowAlertDoubleButtonPanel()
+    {
+        alertPanelSpawnPanelRoot.SetActive(true);
+        
+        var alertPanel = alertDoubleButtonPanelPool.Get();
+        alertPanel.transform.SetParent(alertPanelSpawnPanel.transform);  
+        alertPanel.transform.localPosition = Vector3.zero;
+        
+        alertDoubleButtonPanelList.Add(alertPanel);
+    }
+
+    public void HideAlertPanelSpawnPanelRoot()
+    {
+        for (int i = 0; i < alertSingleButtonPanelList.Count; ++i)
+        {
+            alertSingleButtonPanelList[i].transform.SetParent(alertPanelReleaseParent.transform);
+            alertSingleButtonPanelPool.Release(alertSingleButtonPanelList[i]);
+        }
+        
+        for (int i = 0; i < alertDoubleButtonPanelList.Count; ++i)
+        {
+            alertDoubleButtonPanelList[i].transform.SetParent(alertPanelReleaseParent.transform);
+            alertDoubleButtonPanelPool.Release(alertDoubleButtonPanelList[i]);
+        }
+        
+        alertSingleButtonPanelList.Clear();
+        alertDoubleButtonPanelList.Clear();
+        
+        alertPanelSpawnPanelRoot.SetActive(false);
     }
 }
