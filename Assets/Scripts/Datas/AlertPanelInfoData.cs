@@ -1,8 +1,8 @@
-using System;
+using UnityEngine.Events;
 
 public class AlertPanelInfoData
 {
     public string description;
-    public Action confirmButtonAction;
-    public Action cancelButtonAction;
+    public UnityAction confirmButtonAction;
+    public UnityAction cancelButtonAction;
 }

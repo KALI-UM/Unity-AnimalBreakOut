@@ -44,7 +44,7 @@ public class OutGameManager : MonoBehaviour
             
             if (outGameUIManager.CurrentSwitchableCanvasType == SwitchableCanvasType.Lobby)
             {
-                Application.Quit();
+                outGameUIManager.ShowAlertDoubleButtonPanel(AlertPanelInfoDataFactory.GetAlertPanelInfoData(AlertPanelInfoDataType.QuitGame));
             }
             else
             {

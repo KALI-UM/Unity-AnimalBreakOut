@@ -137,7 +137,7 @@ public class OutGameUIManager : MonoBehaviour, IManager
         this.outGameManager = outGameManager;
     }
 
-    public void ShowAlertSingleButtonPanel()
+    public void ShowAlertSingleButtonPanel(AlertPanelInfoData alertPanelInfoData)
     {
         alertPanelSpawnPanelRoot.SetActive(true);
 
@@ -145,16 +145,22 @@ public class OutGameUIManager : MonoBehaviour, IManager
         alertPanel.transform.SetParent(alertPanelSpawnPanel.transform);
         alertPanel.transform.localPosition = Vector3.zero;
         
+        alertPanel.TryGetComponent(out AlertPanel alertPanelComponent);
+        alertPanelComponent.SetDescriptionTextAndButtonAction(alertPanelInfoData);
+        
         alertSingleButtonPanelList.Add(alertPanel);
     }
     
-    public void ShowAlertDoubleButtonPanel()
+    public void ShowAlertDoubleButtonPanel(AlertPanelInfoData alertPanelInfoData)
     {
         alertPanelSpawnPanelRoot.SetActive(true);
         
         var alertPanel = alertDoubleButtonPanelPool.Get();
         alertPanel.transform.SetParent(alertPanelSpawnPanel.transform);  
         alertPanel.transform.localPosition = Vector3.zero;
+        
+        alertPanel.TryGetComponent(out AlertPanel alertPanelComponent);
+        alertPanelComponent.SetDescriptionTextAndButtonAction(alertPanelInfoData);
         
         alertDoubleButtonPanelList.Add(alertPanel);
     }

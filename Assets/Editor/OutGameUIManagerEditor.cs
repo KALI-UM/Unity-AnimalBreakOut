@@ -53,11 +53,11 @@ public class OutGameUIManagerEditor : Editor
 
         if (GUILayout.Button("Show Alert Single Button Panel"))
         {
-            manager.ShowAlertSingleButtonPanel();
+            manager.ShowAlertSingleButtonPanel(AlertPanelInfoDataFactory.GetAlertPanelInfoData(AlertPanelInfoDataType.TestCloseAlertPanelSingle));
         }
         if (GUILayout.Button("Show Alert Double Button Panel"))
         {
-            manager.ShowAlertDoubleButtonPanel();
+            manager.ShowAlertDoubleButtonPanel(AlertPanelInfoDataFactory.GetAlertPanelInfoData(AlertPanelInfoDataType.TestCloseAlertPanelDouble));
         }
         if (GUILayout.Button("Hide Alert Panel Spawn Panel Root"))
         {
