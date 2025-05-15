@@ -33,8 +33,7 @@ public class GachaPanelController : MonoBehaviour
         {
             SoundManager.Instance.PlaySfx(SfxClipId.GachaResult);
         }
-
-
+        
         if (currentGachaPanelIndex >= gachaPanels.Count)
         {
             currentGachaPanelIndex = 0;

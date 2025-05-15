@@ -20,12 +20,16 @@ public class AlertPanel : MonoBehaviour
 
         if (confirmButton is not null)
         {
+            confirmButton.onClick.RemoveAllListeners();
             confirmButton.onClick.AddListener(alertPanelInfoData.confirmButtonAction);
+            confirmButton.onClick.AddListener(() => SoundManager.Instance.PlaySfx(SfxClipId.ButtonTouch));
         }
         
         if (cancelButton is not null)
         {
+            cancelButton.onClick.RemoveAllListeners();
             cancelButton.onClick.AddListener(alertPanelInfoData.cancelButtonAction);
+            cancelButton.onClick.AddListener(() => SoundManager.Instance.PlaySfx(SfxClipId.ButtonTouch));
         }
     }
 

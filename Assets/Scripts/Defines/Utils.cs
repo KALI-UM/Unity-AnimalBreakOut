@@ -38,8 +38,6 @@ public static class Utils
     public const string BossAttackPattern2AnimatorString = "Attack2";
     public const string BossDeathAnimatorString = "Death";
 
-    public const float GameStartWaitTime = 1f;
-    
     public const string StaminaGoldUseStringKey = "OUTGAME_GOLD";
     public const string GachaSingleAdsStringKey = "OUTGAME_ADS";
     public const string AnimalGradeSortDropDownStringKey = "OUTGAME_GRADE";

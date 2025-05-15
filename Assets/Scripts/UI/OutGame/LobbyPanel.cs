@@ -8,7 +8,6 @@ public class LobbyPanel : MonoBehaviour
 {
     [SerializeField] private Button gameStartButton;
 
-    private readonly WaitForSeconds waitTime = new(Utils.GameStartWaitTime);
     private readonly int staminaRequiredToStartGame = 1;
     private bool isStaminaEnoughToStartGame;
 
@@ -49,18 +48,11 @@ public class LobbyPanel : MonoBehaviour
         {
             onGameStartButtonClicked?.Invoke(staminaRequiredToStartGame);
             gameStartButton.interactable = false;
-            StartCoroutine(OnGameStartButtonClicked());
+            SceneManager.LoadScene("Run");
         }
             );
     }
-
-    private IEnumerator OnGameStartButtonClicked()
-    {
-        yield return waitTime;
-
-        SceneManager.LoadScene("Run");
-    }
-
+    
     private void OnSetStartAnimalIDInGameDataManagerHandler(int animalID, int currentStamina, AnimalUserData animalUserData)
     {
         if (animalID == 0 || !IsContainsAnimalIdInTable(animalID))

@@ -25,7 +25,7 @@ public class OutGameUIManagerEditor : Editor
         {
             if (Application.isPlaying)
             {
-                GameDataManager.onExpChanged?.Invoke(addExpValue);
+                GameDataManager.Instance.PlayerLevelSystem.AddExperienceValue(addExpValue);
                 Debug.Log($"Added exp: {addExpValue}");
             }
             else

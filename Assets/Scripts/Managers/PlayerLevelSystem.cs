@@ -100,6 +100,11 @@ public class PlayerLevelSystem : ISaveLoad
 
     private void LevelUp()
     {
+        if (IsMaxLevel)
+        {
+            return;
+        }
+        
         CurrentLevel = Mathf.Clamp(CurrentLevel + 1, 1, maxLevel);
         CurrentLevelData = DataTableManager.playerLevelDataTalble.GetLevelData(CurrentLevel);
 
